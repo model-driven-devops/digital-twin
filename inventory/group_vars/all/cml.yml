@@ -1,0 +1,1 @@
+cml_lab_file: "{{ lookup('env', 'PWD') }}/files/ubuntu-2-node-nexus.yaml.j2"

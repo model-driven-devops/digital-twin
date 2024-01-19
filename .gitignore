@@ -1,0 +1,9 @@
+venv*/
+ansible_collections/
+*.pyc
+*.retry
+*.signed.bin
+.cache/
+config.yaml
+labs.yaml
+mdd-data/
