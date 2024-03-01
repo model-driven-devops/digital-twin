@@ -13,7 +13,7 @@ all:
       children:
         switches:
           vars:
-            device_ned: cisco-nx-cli-5.25
+            device_ned: cisco-nx-cli-5.23
           hosts:
             n9kv1:
               tags:
