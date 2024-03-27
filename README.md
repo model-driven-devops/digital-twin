@@ -2,44 +2,48 @@
 
 ## Getting Started
 
-First, clone and enter the repo:
+1. Clone and enter the repo:
 ```
 git clone https://github.com/model-driven-devops/digital-twin.git
 cd digital-twin
 ```
 
-Set the default environment variables:
+2. Set the default environment variables:
 
 ```
 . ./envvars
 ```
 
-Next, it is highly recommended that you create a virtual environment to make it easier to
-install the dependencies without conflict:
+3. Create a virtual environment
+- It is highly recommended that you create a virtual environment to make it easier to
+install the dependencies without conflict.
 
 ```
 python3 -m venv venv
 . ./venv/bin/activate
 ```
 
-Next, install the Python requirements via pip:
+4. Install the Python requirements via pip:
+
 ```
 pip3 install -r requirements.txt
 ```
 
-Reactivate virtual environment to ensure your shell is using the newly installed ansible.  
+5. Reactivate the virtual environment
+- Ensures your shell is using the newly installed ansible.
+
 ```
 deactivate
 . ./venv/bin/activate
 ```
 
-To install the tooling and its Ansible dependencies, use ansible-galaxy:
+6. Install the tooling and its Ansible dependencies via ansible-galaxy:
 
 ```
 ansible-galaxy collection install -r requirements.yml
 ```
 
-Set the following environment variables as appropriate for your environment:
+7. Set the following environment variables as appropriate for your environment:
 
 ```
 export CML_HOST=your.cml.server
@@ -49,43 +53,45 @@ export CML_LAB=your_lab_name
 export CML_VERIFY_CERT=false
 ```
 
-Built the reference architecture in CML and start the nodes:
+8. Build the reference architecture in CML and start the nodes:
 
 ```
 ansible-playbook cisco.cml.build -e startup=host -e wait=yes
 ```
 
-Verify that all nodes have IP addresses:
+9. Verify that all nodes have IP addresses:
 
 ```
 ansible-playbook cisco.cml.inventory
 ```
 
-Install NSO:
+10. Install NSO:
+- Note: The task may fail to execute while waiting for host reachability. If so, ensure the 'sshpass' program is installed on your system.
 
 ```
 ansible-playbook ciscops.mdd.nso_install
 ```
 
-Update NSO packages:
+
+11. Update NSO packages:
 
 ```
 ansible-playbook ciscops.mdd.nso_update_packages
 ```
 
-Initialize NSO configuration:
+12. Initialize NSO configuration:
 
 ```
 ansible-playbook ciscops.mdd.nso_init
 ```
 
-Add devices to NSO:
+13. Add devices to NSO:
 
 ```
 ansible-playbook ciscops.mdd.nso_update_devices
 ```
 
-Get the IP address of NSO:
+14. Get the IP address of NSO:
 
 ```
 ansible-playbook cisco.cml.inventory --limit nso1
