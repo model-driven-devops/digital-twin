@@ -1,0 +1,3052 @@
+lab:
+  description: ''
+  notes: ''
+  title: digital-twin-reference
+  version: 0.1.0
+links:
+  - id: l0
+    n1: n3
+    n2: n6
+    i1: i4
+    i2: i4
+    label: R1-GigabitEthernet4<->cat8000v-0-GigabitEthernet4
+  - id: l1
+    n1: n6
+    n2: n4
+    i1: i5
+    i2: i4
+    label: cat8000v-0-GigabitEthernet5<->R2-GigabitEthernet4
+  - id: l2
+    n1: n6
+    n2: n8
+    i1: i1
+    i2: i1
+    label: ISP-GigabitEthernet1<->cat8000v-0-GigabitEthernet1
+  - id: l3
+    n1: n7
+    n2: n10
+    i1: i3
+    i2: i2
+    label: nxos9000-0-Ethernet1/2<->nxos9000-3-Ethernet1/1
+  - id: l4
+    n1: n10
+    n2: n9
+    i1: i3
+    i2: i3
+    label: nxos9000-3-Ethernet1/2<->nxos9000-1-Ethernet1/2
+  - id: l5
+    n1: n7
+    n2: n8
+    i1: i4
+    i2: i2
+    label: nxos9000-0-Ethernet1/3<->cat8000v-0-GigabitEthernet2
+  - id: l6
+    n1: n9
+    n2: n8
+    i1: i4
+    i2: i3
+    label: nxos9000-1-Ethernet1/3<->cat8000v-0-GigabitEthernet3
+  - id: l7
+    n1: n0
+    n2: n13
+    i1: i2
+    i2: i2
+    label: A1-GigabitEthernet0/1<->D1-GigabitEthernet1/0/1
+  - id: l8
+    n1: n0
+    n2: n14
+    i1: i3
+    i2: i2
+    label: A1-GigabitEthernet0/2<->D2-GigabitEthernet1/0/1
+  - id: l9
+    n1: n1
+    n2: n13
+    i1: i2
+    i2: i8
+    label: A2-GigabitEthernet0/1<->D1-GigabitEthernet1/0/7
+  - id: l10
+    n1: n2
+    n2: n13
+    i1: i2
+    i2: i9
+    label: A3-GigabitEthernet0/1<->D1-GigabitEthernet1/0/8
+  - id: l11
+    n1: n1
+    n2: n14
+    i1: i3
+    i2: i8
+    label: A2-GigabitEthernet0/2<->D2-GigabitEthernet1/0/7
+  - id: l12
+    n1: n2
+    n2: n14
+    i1: i3
+    i2: i9
+    label: A3-GigabitEthernet0/2<->D2-GigabitEthernet1/0/8
+  - id: l13
+    n1: n13
+    n2: n11
+    i1: i6
+    i2: i6
+    label: D1-GigabitEthernet1/0/5<->C1-GigabitEthernet1/0/5
+  - id: l14
+    n1: n13
+    n2: n12
+    i1: i7
+    i2: i7
+    label: D1-GigabitEthernet1/0/6<->C2-GigabitEthernet1/0/6
+  - id: l15
+    n1: n14
+    n2: n11
+    i1: i7
+    i2: i7
+    label: D2-GigabitEthernet1/0/6<->C1-GigabitEthernet1/0/6
+  - id: l16
+    n1: n14
+    n2: n12
+    i1: i6
+    i2: i6
+    label: D2-GigabitEthernet1/0/5<->C2-GigabitEthernet1/0/5
+  - id: l17
+    n1: n11
+    n2: n3
+    i1: i2
+    i2: i1
+    label: C1-GigabitEthernet1/0/1<->R1-GigabitEthernet1
+  - id: l18
+    n1: n11
+    n2: n4
+    i1: i3
+    i2: i2
+    label: C1-GigabitEthernet1/0/2<->R2-GigabitEthernet2
+  - id: l19
+    n1: n12
+    n2: n3
+    i1: i3
+    i2: i2
+    label: C2-GigabitEthernet1/0/2<->R1-GigabitEthernet2
+  - id: l20
+    n1: n12
+    n2: n4
+    i1: i2
+    i2: i1
+    label: C2-GigabitEthernet1/0/1<->R2-GigabitEthernet1
+  - id: l21
+    n1: n13
+    n2: n14
+    i1: i4
+    i2: i4
+    label: D1-GigabitEthernet1/0/3<->D2-GigabitEthernet1/0/3
+  - id: l22
+    n1: n13
+    n2: n14
+    i1: i5
+    i2: i5
+    label: D1-GigabitEthernet1/0/4<->D2-GigabitEthernet1/0/4
+  - id: l23
+    n1: n11
+    n2: n12
+    i1: i4
+    i2: i4
+    label: C1-GigabitEthernet1/0/3<->C2-GigabitEthernet1/0/3
+  - id: l24
+    n1: n11
+    n2: n12
+    i1: i5
+    i2: i5
+    label: C1-GigabitEthernet1/0/4<->C2-GigabitEthernet1/0/4
+  - id: l25
+    n1: n7
+    n2: n15
+    i1: i2
+    i2: i2
+    label: S1-Ethernet1/1<->L1-Ethernet1/1
+  - id: l26
+    n1: n15
+    n2: n9
+    i1: i3
+    i2: i2
+    label: L1-Ethernet1/2<->S2-Ethernet1/1
+  - id: l27
+    n1: n16
+    n2: n5
+    i1: i0
+    i2: i0
+    label: ubuntu-0-ens2<->ext-conn-0-port
+  - id: l28
+    n1: n16
+    n2: n2
+    i1: i1
+    i2: i1
+    label: ubuntu-0-ens3<->A3-GigabitEthernet0/0
+nodes:
+  - boot_disk_size: 0
+    configuration: |-
+      Building configuration...
+
+      Current configuration : 3445 bytes
+      !
+      ! Last configuration change at 14:49:14 UTC Sat May 11 2024
+      !
+      version 15.2
+      service timestamps debug datetime msec
+      service timestamps log datetime msec
+      no service password-encryption
+      service compress-config
+      !
+      hostname A1
+      !
+      boot-start-marker
+      boot-end-marker
+      !
+      !
+      no logging console
+      !
+      username mdd privilege 15 secret 5 $1$a1F.$5Quf5kcpjCR/7mBSrgUvz/
+      no aaa new-model
+      !
+      !
+      !
+      !
+      !
+      no ip routing
+      !
+      !
+      !
+      no ip domain-lookup
+      ip domain-name mdd.net
+      no ip cef
+      no ipv6 cef
+      !
+      !
+      !
+      spanning-tree mode rapid-pvst
+      spanning-tree extend system-id
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      interface GigabitEthernet0/0
+       switchport access vlan 10
+       switchport mode access
+       switchport nonegotiate
+       negotiation auto
+       spanning-tree portfast edge
+       spanning-tree bpduguard enable
+      !
+      interface GigabitEthernet0/1
+       switchport trunk allowed vlan 10,20,99
+       switchport trunk encapsulation dot1q
+       switchport trunk native vlan 1000
+       switchport mode trunk
+       switchport nonegotiate
+       negotiation auto
+      !
+      interface GigabitEthernet0/2
+       switchport trunk allowed vlan 10,20,99
+       switchport trunk encapsulation dot1q
+       switchport trunk native vlan 1000
+       switchport mode trunk
+       switchport nonegotiate
+       negotiation auto
+      !
+      interface GigabitEthernet0/3
+       negotiation auto
+      !
+      interface Vlan99
+       ip address 10.0.0.4 255.255.255.240
+       no ip route-cache
+      !
+      ip default-gateway 10.0.0.1
+      ip forward-protocol nd
+      !
+      ip http server
+      ip http secure-server
+      !
+      ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+      ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+      !
+      !
+      !
+      !
+      !
+      !
+      control-plane
+      !
+      banner exec ^C
+      IOSv - Cisco Systems Confidential -
+
+      Supplemental End User License Restrictions
+
+      This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+      By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+      ^C
+      banner incoming ^C
+      IOSv - Cisco Systems Confidential -
+
+      Supplemental End User License Restrictions
+
+      This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+      By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+      ^C
+      banner login ^C
+      IOSv - Cisco Systems Confidential -
+
+      Supplemental End User License Restrictions
+
+      This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+      By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+      ^C
+      !
+      line con 0
+       exec-timeout 0 0
+       logging synchronous
+      line aux 0
+      line vty 0 4
+       login local
+       transport input ssh
+      line vty 5 15
+       login local
+       transport input ssh
+      !
+      !
+      end
+    cpu_limit: 100
+    cpus: 1
+    data_volume: 0
+    hide_links: false
+    id: n0
+    label: A1
+    node_definition: iosvl2
+    ram: 768
+    tags: []
+    x: 637
+    y: 581
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet0/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet0/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet0/3
+        slot: 3
+        type: physical
+  - boot_disk_size: 0
+    configuration: |-
+      Building configuration...
+
+      Current configuration : 3425 bytes
+      !
+      ! Last configuration change at 16:24:17 UTC Sat May 11 2024
+      !
+      version 15.2
+      service timestamps debug datetime msec
+      service timestamps log datetime msec
+      no service password-encryption
+      service compress-config
+      !
+      hostname A2
+      !
+      boot-start-marker
+      boot-end-marker
+      !
+      !
+      no logging console
+      !
+      username mdd privilege 15 secret 5 $1$zfbd$bTBIjJYjaL4OGSV5BUOeb0
+      no aaa new-model
+      !
+      !
+      !
+      !
+      !
+      no ip routing
+      !
+      !
+      !
+      ip domain-name mdd.net
+      no ip cef
+      no ipv6 cef
+      !
+      !
+      !
+      spanning-tree mode rapid-pvst
+      spanning-tree extend system-id
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      interface GigabitEthernet0/0
+       switchport access vlan 10
+       switchport mode access
+       switchport nonegotiate
+       negotiation auto
+       spanning-tree portfast edge
+       spanning-tree bpduguard enable
+      !
+      interface GigabitEthernet0/1
+       switchport trunk allowed vlan 10,20,99
+       switchport trunk encapsulation dot1q
+       switchport trunk native vlan 1000
+       switchport mode trunk
+       switchport nonegotiate
+       negotiation auto
+      !
+      interface GigabitEthernet0/2
+       switchport trunk allowed vlan 10,20,99
+       switchport trunk encapsulation dot1q
+       switchport trunk native vlan 1000
+       switchport mode trunk
+       switchport nonegotiate
+       negotiation auto
+      !
+      interface GigabitEthernet0/3
+       negotiation auto
+      !
+      interface Vlan99
+       ip address 10.0.0.5 255.255.255.240
+       no ip route-cache
+      !
+      ip default-gateway 10.0.0.1
+      ip forward-protocol nd
+      !
+      ip http server
+      ip http secure-server
+      !
+      ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+      ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+      !
+      !
+      !
+      !
+      !
+      !
+      control-plane
+      !
+      banner exec ^C
+      IOSv - Cisco Systems Confidential -
+
+      Supplemental End User License Restrictions
+
+      This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+      By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+      ^C
+      banner incoming ^C
+      IOSv - Cisco Systems Confidential -
+
+      Supplemental End User License Restrictions
+
+      This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+      By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+      ^C
+      banner login ^C
+      IOSv - Cisco Systems Confidential -
+
+      Supplemental End User License Restrictions
+
+      This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+      By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+      ^C
+      !
+      line con 0
+       exec-timeout 0 0
+       logging synchronous
+      line aux 0
+      line vty 0 4
+       login local
+       transport input ssh
+      line vty 5 15
+       login local
+       transport input ssh
+      !
+      !
+      end
+    cpu_limit: 100
+    cpus: 1
+    data_volume: 0
+    hide_links: false
+    id: n1
+    label: A2
+    node_definition: iosvl2
+    ram: 768
+    tags: []
+    x: 847
+    y: 586
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet0/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet0/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet0/3
+        slot: 3
+        type: physical
+  - boot_disk_size: 0
+    configuration: |-
+      Building configuration...
+
+      Current configuration : 3425 bytes
+      !
+      ! Last configuration change at 16:24:10 UTC Sat May 11 2024
+      !
+      version 15.2
+      service timestamps debug datetime msec
+      service timestamps log datetime msec
+      no service password-encryption
+      service compress-config
+      !
+      hostname A3
+      !
+      boot-start-marker
+      boot-end-marker
+      !
+      !
+      no logging console
+      !
+      username mdd privilege 15 secret 5 $1$/r.9$twGAzLeRvuQ9/DB0qzcpc1
+      no aaa new-model
+      !
+      !
+      !
+      !
+      !
+      no ip routing
+      !
+      !
+      !
+      ip domain-name mdd.net
+      no ip cef
+      no ipv6 cef
+      !
+      !
+      !
+      spanning-tree mode rapid-pvst
+      spanning-tree extend system-id
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      !
+      interface GigabitEthernet0/0
+       switchport access vlan 20
+       switchport mode access
+       switchport nonegotiate
+       negotiation auto
+       spanning-tree portfast edge
+       spanning-tree bpduguard enable
+      !
+      interface GigabitEthernet0/1
+       switchport trunk allowed vlan 10,20,99
+       switchport trunk encapsulation dot1q
+       switchport trunk native vlan 1000
+       switchport mode trunk
+       switchport nonegotiate
+       negotiation auto
+      !
+      interface GigabitEthernet0/2
+       switchport trunk allowed vlan 10,20,99
+       switchport trunk encapsulation dot1q
+       switchport trunk native vlan 1000
+       switchport mode trunk
+       switchport nonegotiate
+       negotiation auto
+      !
+      interface GigabitEthernet0/3
+       negotiation auto
+      !
+      interface Vlan99
+       ip address 10.0.0.6 255.255.255.240
+       no ip route-cache
+      !
+      ip default-gateway 10.0.0.1
+      ip forward-protocol nd
+      !
+      ip http server
+      ip http secure-server
+      !
+      ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+      ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+      !
+      !
+      !
+      !
+      !
+      !
+      control-plane
+      !
+      banner exec ^C
+      IOSv - Cisco Systems Confidential -
+
+      Supplemental End User License Restrictions
+
+      This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+      By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+      ^C
+      banner incoming ^C
+      IOSv - Cisco Systems Confidential -
+
+      Supplemental End User License Restrictions
+
+      This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+      By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+      ^C
+      banner login ^C
+      IOSv - Cisco Systems Confidential -
+
+      Supplemental End User License Restrictions
+
+      This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+      By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+      ^C
+      !
+      line con 0
+       exec-timeout 0 0
+       logging synchronous
+      line aux 0
+      line vty 0 4
+       login local
+       transport input ssh
+      line vty 5 15
+       login local
+       transport input ssh
+      !
+      !
+      end
+    cpu_limit: 100
+    cpus: 1
+    data_volume: 0
+    hide_links: false
+    id: n2
+    label: A3
+    node_definition: iosvl2
+    ram: 768
+    tags: []
+    x: 1048
+    y: 583
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet0/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet0/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet0/3
+        slot: 3
+        type: physical
+  - boot_disk_size: 0
+    configuration: "Building configuration...\n\nCurrent configuration : 6461 bytes\n\
+      !\n! Last configuration change at 16:22:51 UTC Sat May 11 2024\n!\nversion 17.10\n\
+      service timestamps debug datetime msec\nservice timestamps log datetime msec\n\
+      service call-home\nplatform qfp utilization monitor load 80\nplatform punt-keepalive\
+      \ disable-kernel-core\nplatform console serial\n!\nhostname R1\n!\nboot-start-marker\n\
+      boot-end-marker\n!\n!\nno logging console\nno aaa new-model\n!\n!\n!\n!\n!\n\
+      !\n!\nno ip domain lookup\nip domain name mdd.net\n!\n!\n!\nlogin on-success\
+      \ log\n!\n!\n!\n!\n!\n!\n!\nsubscriber templating\n!\nmultilink bundle-name\
+      \ authenticated\n!\n!\n!\ncrypto pki trustpoint SLA-TrustPoint\n enrollment\
+      \ pkcs12\n revocation-check crl\n!\ncrypto pki trustpoint TP-self-signed-2809139062\n\
+      \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-2809139062\n\
+      \ revocation-check none\n rsakeypair TP-self-signed-2809139062\n!\n!\ncrypto\
+      \ pki certificate chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209\
+      \ A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355\
+      \ 040A1305 43697363 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73\
+      \ 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338\
+      \ 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030\
+      \ 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130\
+      \ 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100\
+      \ A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147\
+      \ C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239\
+      \ C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9\
+      \ 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD\
+      \ C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7\
+      \ 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62\
+      \ EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD\
+      \ 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1\
+      \ 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13\
+      \ 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17\
+      \ 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24\
+      \ D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B\
+      \ 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E\
+      \ 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700\
+      \ 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6\
+      \ 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F\
+      \ 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA\
+      \ EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049\
+      \ 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \t\
+      quit\ncrypto pki certificate chain TP-self-signed-2809139062\n certificate self-signed\
+      \ 01\n  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n\
+      \  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+      \  69666963 6174652D 32383039 31333930 3632301E 170D3234 30343138 31343433\n\
+      \  31385A17 0D333430 34313831 34343331 385A3031 312F302D 06035504 03132649\n\
+      \  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D32 38303931\n\
+      \  33393036 32308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201\n\
+      \  0A028201 0100A026 1053D8B6 1C8DF10C 83B4F346 3439E820 C5577414 E375E914\n\
+      \  47AD6618 54DEDCD1 1BBCC90E 106EC081 ECDC28BA BA656F6C F8BB7CC4 96EB3730\n\
+      \  C5F6870F 8A4ED4AE 8647F478 57D3C069 C2BD713D FEE98F6A 2E111DCD E4DBC2B2\n\
+      \  BF3875EC 04D0BA37 BEF9C2E7 6B1875ED A296EE05 7607E9D2 0808308D E1F517C2\n\
+      \  8A4F3383 CE856E60 3B42124B 38A7110F 0C177814 460D8089 8731C0B3 CA1DA066\n\
+      \  3CCABD1E 4E0F8701 5431801E 48124418 3C9EC94A 0E8C1529 6D534C08 A19FC5F1\n\
+      \  063BD019 AC1DCF9E A49AB767 7AAB2CC9 F2FCDEFC 087ED162 278A9C1B AA643F14\n\
+      \  C4E91335 B3F967DA BDB8FA63 C349D6F8 D5B27834 1D064AC8 9C778260 823C5BBD\n\
+      \  B70E87D9 6FC90203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF\n\
+      \  301F0603 551D2304 18301680 1450E754 C291244E 1253C0CE D6AE461B EE83CB30\n\
+      \  CC301D06 03551D0E 04160414 50E754C2 91244E12 53C0CED6 AE461BEE 83CB30CC\n\
+      \  300D0609 2A864886 F70D0101 05050003 82010100 5BF8C289 2BB180D7 FB9E044B\n\
+      \  5BFD6557 77B4CCA4 47AA3345 B4D26947 1E713CD9 E789CB93 75B6E83A 1BD08797\n\
+      \  2F509D37 F44F2DD0 7A385B62 CC95306E D607216E E3614057 578CAF4C 1BF4C00C\n\
+      \  50EE34AD 0A5ADE59 1D58DF6B D05F4E05 15D2E4E9 80C17E0D 517858B7 EE583228\n\
+      \  D3FF1A9D 5234D191 9CB48319 B1088E9B 191141FC 9B65838C 7E4A4C9E 2E17AA77\n\
+      \  F66A9B12 9A8C268E CAA6A623 370C844A A422652F D8A2B9A6 12FDEC91 103A8ABD\n\
+      \  4B25FBFB 5FF60FE5 E62933CF BE00D005 8BB9C3F7 7E55601C 68DFF2BB C016F9C0\n\
+      \  93826005 A7BDD946 12FD0BF8 B92A7111 FE75350D 21EBD7BC C15A748C E60D8AA6\n\
+      \  14261C1C 39B2DCFC FC368E47 A8578E9D 00E64A01\n  \tquit\n!\nlicense udi pid\
+      \ C8000V sn 9ZCJMXSR994\ndiagnostic bootup level minimal\nmemory free low-watermark\
+      \ processor 70623\n!\n!\n!\nusername mdd privilege 15 secret 9 $9$IrxBQaxPQnfLXE$qPBMrxMrB9EUa0S8ZERGHHWXfcvjtqqk1J02Snpaz.M\n\
+      !\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address 10.0.0.76\
+      \ 255.255.255.255\n!\ninterface GigabitEthernet1\n ip address 10.0.0.29 255.255.255.252\n\
+      \ ip ospf network point-to-point\n negotiation auto\n!\ninterface GigabitEthernet2\n\
+      \ ip address 10.0.0.25 255.255.255.252\n ip ospf network point-to-point\n negotiation\
+      \ auto\n!\ninterface GigabitEthernet3\n no ip address\n shutdown\n negotiation\
+      \ auto\n!\ninterface GigabitEthernet4\n ip address 203.0.111.1 255.255.255.252\n\
+      \ negotiation auto\n!\nrouter ospf 1\n router-id 10.0.0.76\n passive-interface\
+      \ Loopback0\n network 10.0.0.25 0.0.0.0 area 0\n network 10.0.0.29 0.0.0.0 area\
+      \ 0\n network 10.0.0.76 0.0.0.0 area 0\n default-information originate\n!\n\
+      ip forward-protocol nd\nno ip http server\nip http secure-server\n!\nip route\
+      \ 0.0.0.0 0.0.0.0 203.0.111.2\nip ssh bulk-mode 131072\n!\n!\n!\n!\n!\ncontrol-plane\n\
+      !\n!\nline con 0\n exec-timeout 0 0\n logging synchronous\n stopbits 1\nline\
+      \ aux 0\nline vty 0\n login local\n transport input ssh\nline vty 1\n login\
+      \ local\n length 0\n transport input ssh\nline vty 2 4\n login local\n transport\
+      \ input ssh\nline vty 5 15\n login local\n transport input ssh\n!\ncall-home\n\
+      \ ! If contact email address in call-home is configured as sch-smart-licensing@cisco.com\n\
+      \ ! the email address configured in Cisco Smart License Portal will be used\
+      \ as contact email address to send SCH notifications.\n contact-email-addr sch-smart-licensing@cisco.com\n\
+      \ profile \"CiscoTAC-1\"\n  active\n  destination transport-method http\n!\n\
+      !\n!\n!\n!\n!\nend"
+    cpu_limit: 100
+    cpus: 1
+    data_volume: 0
+    hide_links: false
+    id: n3
+    label: R1
+    node_definition: cat8000v
+    ram: 4096
+    tags: []
+    x: 747
+    y: 23
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet2
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet3
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet4
+        slot: 3
+        type: physical
+  - boot_disk_size: 0
+    configuration: "Building configuration...\n\nCurrent configuration : 6761 bytes\n\
+      !\n! Last configuration change at 16:22:52 UTC Sat May 11 2024\n!\nversion 17.10\n\
+      service timestamps debug datetime msec\nservice timestamps log datetime msec\n\
+      service call-home\nplatform qfp utilization monitor load 80\nplatform punt-keepalive\
+      \ disable-kernel-core\nplatform console serial\n!\nhostname R2\n!\nboot-start-marker\n\
+      boot-end-marker\n!\n!\nvrf definition Mgmt\n !\n address-family ipv4\n exit-address-family\n\
+      !\nno logging console\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nip domain name\
+      \ mdd.net\nip dhcp excluded-address 10.0.0.1 10.0.0.10\nip dhcp excluded-address\
+      \ 10.1.0.1 10.1.0.10\n!\nip dhcp pool management\n network 10.0.0.0 255.255.255.240\n\
+      \ default-router 10.0.0.1\n!\nip dhcp pool pcs\n network 10.1.0.0 255.255.255.0\n\
+      \ default-router 10.1.0.1\n!\n!\n!\nlogin on-success log\n!\n!\n!\n!\n!\n!\n\
+      !\nsubscriber templating\n!\nmultilink bundle-name authenticated\n!\n!\n!\n\
+      crypto pki trustpoint SLA-TrustPoint\n enrollment pkcs12\n revocation-check\
+      \ crl\n!\ncrypto pki trustpoint TP-self-signed-1007268719\n enrollment selfsigned\n\
+      \ subject-name cn=IOS-Self-Signed-Certificate-1007268719\n revocation-check\
+      \ none\n rsakeypair TP-self-signed-1007268719\n!\n!\ncrypto pki certificate\
+      \ chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209 A0030201 02020101\
+      \ 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355 040A1305 43697363\
+      \ 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73 696E6720 526F6F74\
+      \ 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338 30353330 31393438\
+      \ 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030 1E060355 04031317\
+      \ 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130 82012230 0D06092A\
+      \ 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100 A6BCBD96 131E05F7\
+      \ 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147 C655D8D7 9471380D\
+      \ 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239 C659F715 B98C0A59\
+      \ 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96\
+      \ 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD C847A2C5 DAB553EB\
+      \ 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7 948E71D7 AE3BCC84\
+      \ F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62 EA2F505D C7B062A4\
+      \ 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD 3D992327 A8BB03BD\
+      \ 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1 02030100 01A34230\
+      \ 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13 0101FF04 05300301\
+      \ 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17 606AF333 3D3B4C73\
+      \ E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24 D3932A66 86025D9F\
+      \ E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B 77FC460E CD636FDB\
+      \ DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E 1AECA0C2 2189BB5C\
+      \ 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700 6ADF0F0D CF835015\
+      \ 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB\
+      \ E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F 494E8A9E 07B85737\
+      \ F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA EEBC7CF9 8428787B\
+      \ 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049 4D10AB75 27E86F73\
+      \ 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \tquit\ncrypto pki certificate\
+      \ chain TP-self-signed-1007268719\n certificate self-signed 01\n  30820330 30820218\
+      \ A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n  31312F30 2D060355\
+      \ 04031326 494F532D 53656C66 2D536967 6E65642D 43657274\n  69666963 6174652D\
+      \ 31303037 32363837 3139301E 170D3234 30343138 31343433\n  31355A17 0D333430\
+      \ 34313831 34343331 355A3031 312F302D 06035504 03132649\n  4F532D53 656C662D\
+      \ 5369676E 65642D43 65727469 66696361 74652D31 30303732\n  36383731 39308201\
+      \ 22300D06 092A8648 86F70D01 01010500 0382010F 00308201\n  0A028201 0100B8F2\
+      \ 022D935A D3451653 6D238A17 0E1D74B7 0DDFAB99 FC161066\n  5FA83015 4CE322CE\
+      \ C2B5CD1A AE71542D 35D76985 C0E9E047 0D1424A6 984E0FB0\n  17851C4B E1D480D8\
+      \ 12646746 6761A8F3 92724716 ECF7E18B D43D76BF E7D264B9\n  E0F56E21 729F29C7\
+      \ 531FD391 039507AE 3B552883 05557C22 06C30BDD 2085A3CD\n  409B9BE1 6B3772B9\
+      \ 08558554 4DB50BFF 9DE4C3E6 4642C0FD AAEF7017 AF5A14E7\n  0AC65DC1 297CBF3E\
+      \ CE492716 F065EEB6 43580C4B 8FD7434E E870AB3A 31013DC9\n  02DE7BC7 EEC12703\
+      \ C6651E89 439447AE CFE654C1 875AB4D6 73C6B1A4 C2488444\n  CA785211 01884971\
+      \ BF53F164 2A7EBAD2 6CFCD670 C9A6369C 2DADC05A 0D03BC21\n  79A33E5B 6BEF0203\
+      \ 010001A3 53305130 0F060355 1D130101 FF040530 030101FF\n  301F0603 551D2304\
+      \ 18301680 14AEE305 4BF8D7C7 0669116E 0735ADC2 555A496C\n  9A301D06 03551D0E\
+      \ 04160414 AEE3054B F8D7C706 69116E07 35ADC255 5A496C9A\n  300D0609 2A864886\
+      \ F70D0101 05050003 82010100 3DD9DEB7 6AF561B4 61A22209\n  2565AAAD 3E0A0368\
+      \ 115B02D9 70C0E41D AC4FCC5B 5D35C5AB CB4B479C 0E02CD39\n  FE2836DB F62C9716\
+      \ 429CAC88 602E36B7 EDA72885 5FFFEE6D C7278E96 F03FA936\n  32384E9F C7261720\
+      \ 0D77D2EA 2477D85F 628C31FA 15804AA0 A707150A 1F5C0913\n  6591FCC0 12E38451\
+      \ 349C68A3 8A5B1D08 A78A55AD 9430B077 0705F244 FF928800\n  5CB81D07 2DB83557\
+      \ DA4B8BD7 C15B738E D0586F88 C64F5461 3D49A412 655B0B06\n  AAF2991A C6201FA7\
+      \ 5D9BE9DE 4CCF54CF 2C649EBE 3533BD22 A67FDC33 707C79DC\n  2DEB8E76 CAF6C2BC\
+      \ D3F67491 87B07C08 7F7C668F 5A32E8B3 01262DC1 A5AFF2B4\n  636BA37E D7DF5B69\
+      \ 77F351B9 2DDEC139 CF3CFBE9\n  \tquit\n!\nlicense udi pid C8000V sn 9K3Y0J8LFSL\n\
+      diagnostic bootup level minimal\nmemory free low-watermark processor 70623\n\
+      !\n!\n!\nusername mdd privilege 15 secret 9 $9$yRF.RID1zWkWzk$tEyTUTcI5gVUHISO5/xpUuLMoWA9WE73fOxGztvFpRA\n\
+      !\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address 10.0.0.77\
+      \ 255.255.255.255\n!\ninterface GigabitEthernet1\n ip address 10.0.0.37 255.255.255.252\n\
+      \ ip ospf network point-to-point\n negotiation auto\n!\ninterface GigabitEthernet2\n\
+      \ ip address 10.0.0.33 255.255.255.252\n ip ospf network point-to-point\n negotiation\
+      \ auto\n!\ninterface GigabitEthernet3\n vrf forwarding Mgmt\n ip address dhcp\n\
+      \ negotiation auto\n!\ninterface GigabitEthernet4\n ip address 203.0.112.1 255.255.255.252\n\
+      \ negotiation auto\n!\nrouter ospf 1\n passive-interface Loopback0\n network\
+      \ 10.0.0.33 0.0.0.0 area 0\n network 10.0.0.37 0.0.0.0 area 0\n network 10.0.0.77\
+      \ 0.0.0.0 area 0\n default-information originate metric 10\n!\nip forward-protocol\
+      \ nd\nno ip http server\nip http secure-server\n!\nip route 0.0.0.0 0.0.0.0\
+      \ 203.0.112.2\nip ssh bulk-mode 131072\n!\n!\n!\n!\n!\ncontrol-plane\n!\n!\n\
+      line con 0\n exec-timeout 0 0\n logging synchronous\n stopbits 1\nline aux 0\n\
+      line vty 0\n login local\n transport input ssh\nline vty 1\n login local\n length\
+      \ 0\n transport input ssh\nline vty 2 4\n login local\n transport input ssh\n\
+      line vty 5 15\n login local\n transport input ssh\n!\ncall-home\n ! If contact\
+      \ email address in call-home is configured as sch-smart-licensing@cisco.com\n\
+      \ ! the email address configured in Cisco Smart License Portal will be used\
+      \ as contact email address to send SCH notifications.\n contact-email-addr sch-smart-licensing@cisco.com\n\
+      \ profile \"CiscoTAC-1\"\n  active\n  destination transport-method http\n!\n\
+      !\n!\n!\n!\n!\nend"
+    cpu_limit: 100
+    cpus: 1
+    data_volume: 0
+    hide_links: false
+    id: n4
+    label: R2
+    node_definition: cat8000v
+    ram: 4096
+    tags: []
+    x: 928
+    y: 22
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet2
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet3
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet4
+        slot: 3
+        type: physical
+  - boot_disk_size: 0
+    configuration: bridge0
+    cpu_limit: 100
+    cpus: 0
+    data_volume: 0
+    hide_links: false
+    id: n5
+    label: ext-conn-0
+    node_definition: external_connector
+    ram: 0
+    tags: []
+    x: 1220
+    y: 756
+    interfaces:
+      - id: i0
+        label: port
+        slot: 0
+        type: physical
+  - boot_disk_size: 0
+    configuration: "Building configuration...\n\nCurrent configuration : 6090 bytes\n\
+      !\n! Last configuration change at 02:04:06 UTC Thu May 9 2024\n!\nversion 17.10\n\
+      service timestamps debug datetime msec\nservice timestamps log datetime msec\n\
+      service call-home\nplatform qfp utilization monitor load 80\nplatform punt-keepalive\
+      \ disable-kernel-core\nplatform console serial\n!\nhostname ISP\n!\nboot-start-marker\n\
+      boot-end-marker\n!\n!\nno logging console\nno aaa new-model\n!\n!\n!\n!\n!\n\
+      !\n!\n!\n!\n!\nlogin on-success log\n!\n!\n!\n!\n!\n!\n!\nsubscriber templating\n\
+      !\nmultilink bundle-name authenticated\n!\n!\n!\ncrypto pki trustpoint SLA-TrustPoint\n\
+      \ enrollment pkcs12\n revocation-check crl\n!\ncrypto pki trustpoint TP-self-signed-1745852196\n\
+      \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-1745852196\n\
+      \ revocation-check none\n rsakeypair TP-self-signed-1745852196\n!\n!\ncrypto\
+      \ pki certificate chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209\
+      \ A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355\
+      \ 040A1305 43697363 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73\
+      \ 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338\
+      \ 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030\
+      \ 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130\
+      \ 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100\
+      \ A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147\
+      \ C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239\
+      \ C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9\
+      \ 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD\
+      \ C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7\
+      \ 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62\
+      \ EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD\
+      \ 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1\
+      \ 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13\
+      \ 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17\
+      \ 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24\
+      \ D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B\
+      \ 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E\
+      \ 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700\
+      \ 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6\
+      \ 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F\
+      \ 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA\
+      \ EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049\
+      \ 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \t\
+      quit\ncrypto pki certificate chain TP-self-signed-1745852196\n certificate self-signed\
+      \ 01\n  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n\
+      \  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+      \  69666963 6174652D 31373435 38353231 3936301E 170D3234 30343138 31343433\n\
+      \  30385A17 0D333430 34313831 34343330 385A3031 312F302D 06035504 03132649\n\
+      \  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D31 37343538\n\
+      \  35323139 36308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201\n\
+      \  0A028201 0100A7BF AC846807 73712A9D 8708FC8C 3EB9CE35 8E609856 FF29143E\n\
+      \  DB8028F4 34E475A9 9DAD848E 6D6B8217 59D4F15B 612CE18A 9D739DA2 E9A3F9DB\n\
+      \  96770D3D 4723A1B7 01CB479F 16BBB79A 05F9B04E 24F3E58D AF13ED8B 4DC85336\n\
+      \  3AA521BB 0D9F5BCE 190BEBEC 1CA560F3 E2ADD160 F4242630 25C39134 946D164A\n\
+      \  E1A63520 814F2E63 9824D07A 9859B5EB B42953BA 23AB8BE0 76457070 13D3566E\n\
+      \  0D6FCF18 DDE237D1 41CAA61E 9C902989 5DA10C32 B2496BC6 D14D4368 92C201BA\n\
+      \  9B73C9B0 454E41EE 14F2D6EC 5AB92E2F 0647B24D ECA17691 FADCB3B1 B24A56D6\n\
+      \  44B48B1D D4AF0D18 BC18A6C9 867E13F0 50FC0C7F 0F70220A 80EC40B2 B1850B3C\n\
+      \  CBCBDAA7 E8270203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF\n\
+      \  301F0603 551D2304 18301680 14A34F97 CE24BC75 02E7118A 68B72ABB 57B067FD\n\
+      \  9F301D06 03551D0E 04160414 A34F97CE 24BC7502 E7118A68 B72ABB57 B067FD9F\n\
+      \  300D0609 2A864886 F70D0101 05050003 82010100 05438BB8 76C7D885 E93CF434\n\
+      \  0069F802 F794576D 06A9828A B1A66E58 67E62A3A 30869B14 50DAB59A 85DC0862\n\
+      \  12C9D5C7 F11D2959 BF5542BA E47D06D1 FC65AF43 7DE40EEC 34E086AC 90E5003A\n\
+      \  53408E99 7B444049 E851C862 AD5FC90D A59E5C37 656FD656 98C951B0 C41BDB75\n\
+      \  89133D31 9C500E92 32E0F33F 517EE764 D2F4F3CB 108DDAAE A045494C 9447C010\n\
+      \  AFA2C812 60A54D95 998E4789 ECA32B2C 810981BB D5CD1C21 6D7E3C33 1C852F68\n\
+      \  9A5277B7 7F17A2F2 F98C8DBF 5B248D21 8EBF47AE A4ACB8B3 3638C627 0366A2A9\n\
+      \  321DBA3D 6C6E8572 3359D87D 7B100647 BD80329D F3CF2BD1 1CB9373D A176A952\n\
+      \  16149709 83261041 E39CE239 A17BE674 C9DE12F3\n  \tquit\n!\nlicense udi pid\
+      \ C8000V sn 9I6MI8FH01M\ndiagnostic bootup level minimal\nmemory free low-watermark\
+      \ processor 70623\n!\n!\n!\n!\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\ninterface\
+      \ GigabitEthernet1\n ip address 203.0.113.2 255.255.255.252\n negotiation auto\n\
+      !\ninterface GigabitEthernet2\n no ip address\n shutdown\n negotiation auto\n\
+      !\ninterface GigabitEthernet3\n no ip address\n shutdown\n negotiation auto\n\
+      !\ninterface GigabitEthernet4\n ip address 203.0.111.2 255.255.255.252\n negotiation\
+      \ auto\n!\ninterface GigabitEthernet5\n ip address 203.0.112.2 255.255.255.252\n\
+      \ negotiation auto\n!\nip forward-protocol nd\nno ip http server\nip http secure-server\n\
+      !\nip route 10.0.0.0 255.0.0.0 203.0.111.1\nip route 10.0.0.0 255.0.0.0 203.0.112.1\
+      \ 10\nip route 20.0.0.0 255.0.0.0 GigabitEthernet1 203.0.113.1\nip ssh bulk-mode\
+      \ 131072\n!\n!\n!\n!\n!\ncontrol-plane\n!\n!\nline con 0\n exec-timeout 0 0\n\
+      \ stopbits 1\nline aux 0\nline vty 0\n login\n transport input ssh\nline vty\
+      \ 1\n login\n length 0\n transport input ssh\nline vty 2 4\n login\n transport\
+      \ input ssh\n!\ncall-home\n ! If contact email address in call-home is configured\
+      \ as sch-smart-licensing@cisco.com\n ! the email address configured in Cisco\
+      \ Smart License Portal will be used as contact email address to send SCH notifications.\n\
+      \ contact-email-addr sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n\
+      \  active\n  destination transport-method http\n!\n!\n!\n!\n!\n!\nend"
+    cpu_limit: 100
+    cpus: 1
+    data_volume: 0
+    hide_links: false
+    id: n6
+    label: ISP
+    node_definition: cat8000v
+    ram: 4096
+    tags: []
+    x: 837
+    y: -117
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet2
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet3
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet4
+        slot: 3
+        type: physical
+      - id: i5
+        label: GigabitEthernet5
+        slot: 4
+        type: physical
+  - boot_disk_size: 0
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Sat May 11 16:09:33 2024
+      !Time: Sat May 11 16:09:33 2024
+
+      version 9.3(8) Bios:version
+      hostname S1
+      vdc S1 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource u4route-mem minimum 248 maximum 248
+        limit-resource u6route-mem minimum 96 maximum 96
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      feature ospf
+
+      no password strength-check
+      username admin password 5 $5$HMIAKH$Io.erf.s31kGVs6y3aLD/H0ZSrvRwx46tu.TzMZPKH9  role network-admin
+      username cisco password 5 $5$JGAOEH$eTynsO7aF4NQ7oNI884JICbjhfNGCkBaUmWThCEfGf6  role network-admin
+      username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
+      username mdd password 5 $5$PJGFFP$AsDS5HIKamf.5dN975Q7CDKKF5c89wCLxQrhHjmfjf.  role priv-15
+      username mdd passphrase  lifetime 99999 warntime 14 gracetime 3
+      ip domain-lookup
+      ip domain-name mdd.net
+      copp profile strict
+      snmp-server user mdd priv-15 auth md5 332C22F7AA263E377A5937333275343BE726 priv 016678ABE42E202E02652E6979257722B72C localizedV2key
+      snmp-server user admin network-admin auth md5 0050E182A1CC656545AD372CE23E43FD8C75 priv 3766B690E0E871251AC6255FEE6444AFE646 localizedV2key
+      snmp-server user cisco network-admin auth md5 332CDDF090A1470C0BD53513F46A42A0933B priv 0156A09CFBC3346033946F1EB5375EE6C832 localizedV2key
+      rmon event 1 log trap public description FATAL(1) owner PMON@FATAL
+      rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 log trap public description ERROR(3) owner PMON@ERROR
+      rmon event 4 log trap public description WARNING(4) owner PMON@WARNING
+      rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO
+
+      vlan 1
+
+      vrf context management
+
+      interface Ethernet1/1
+        no switchport
+        ip address 20.0.0.54/30
+        ip ospf network point-to-point
+        ip router ospf 1 area 0.0.0.1
+        no shutdown
+
+      interface Ethernet1/2
+        no switchport
+        ip address 20.0.0.58/30
+        ip ospf network point-to-point
+        ip router ospf 1 area 0.0.0.1
+        no shutdown
+
+      interface Ethernet1/3
+        no switchport
+        ip address 20.0.0.45/30
+        ip ospf network point-to-point
+        ip router ospf 1 area 0.0.0.1
+        no shutdown
+
+      interface Ethernet1/4
+
+      interface Ethernet1/5
+
+      interface Ethernet1/6
+
+      interface Ethernet1/7
+
+      interface Ethernet1/8
+
+      interface Ethernet1/9
+
+      interface Ethernet1/10
+
+      interface Ethernet1/11
+
+      interface Ethernet1/12
+
+      interface Ethernet1/13
+
+      interface Ethernet1/14
+
+      interface Ethernet1/15
+
+      interface Ethernet1/16
+
+      interface Ethernet1/17
+
+      interface Ethernet1/18
+
+      interface Ethernet1/19
+
+      interface Ethernet1/20
+
+      interface Ethernet1/21
+
+      interface Ethernet1/22
+
+      interface Ethernet1/23
+
+      interface Ethernet1/24
+
+      interface Ethernet1/25
+
+      interface Ethernet1/26
+
+      interface Ethernet1/27
+
+      interface Ethernet1/28
+
+      interface Ethernet1/29
+
+      interface Ethernet1/30
+
+      interface Ethernet1/31
+
+      interface Ethernet1/32
+
+      interface Ethernet1/33
+
+      interface Ethernet1/34
+
+      interface Ethernet1/35
+
+      interface Ethernet1/36
+
+      interface Ethernet1/37
+
+      interface Ethernet1/38
+
+      interface Ethernet1/39
+
+      interface Ethernet1/40
+
+      interface Ethernet1/41
+
+      interface Ethernet1/42
+
+      interface Ethernet1/43
+
+      interface Ethernet1/44
+
+      interface Ethernet1/45
+
+      interface Ethernet1/46
+
+      interface Ethernet1/47
+
+      interface Ethernet1/48
+
+      interface Ethernet1/49
+
+      interface Ethernet1/50
+
+      interface Ethernet1/51
+
+      interface Ethernet1/52
+
+      interface Ethernet1/53
+
+      interface Ethernet1/54
+
+      interface Ethernet1/55
+
+      interface Ethernet1/56
+
+      interface Ethernet1/57
+
+      interface Ethernet1/58
+
+      interface Ethernet1/59
+
+      interface Ethernet1/60
+
+      interface Ethernet1/61
+
+      interface Ethernet1/62
+
+      interface Ethernet1/63
+
+      interface Ethernet1/64
+
+      interface mgmt0
+        vrf member management
+
+      interface loopback0
+        ip address 20.0.0.1/32
+        ip router ospf 1 area 0.0.0.1
+      icam monitor scale
+
+      line console
+        exec-timeout 0
+      line vty
+        exec-timeout 0
+      boot nxos bootflash:/nxos.9.3.8.bin sup-1
+      router ospf 1
+
+      no logging console
+    cpu_limit: 100
+    cpus: 2
+    data_volume: 0
+    hide_links: false
+    id: n7
+    label: S1
+    node_definition: nxosv9000
+    ram: 8192
+    tags: []
+    x: 751
+    y: -398
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: mgmt0
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet1/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet1/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet1/3
+        slot: 3
+        type: physical
+  - boot_disk_size: 0
+    configuration: "Building configuration...\n\nCurrent configuration : 6208 bytes\n\
+      !\n! Last configuration change at 02:04:04 UTC Thu May 9 2024\n!\nversion 17.10\n\
+      service timestamps debug datetime msec\nservice timestamps log datetime msec\n\
+      service call-home\nplatform qfp utilization monitor load 80\nplatform punt-keepalive\
+      \ disable-kernel-core\nplatform console serial\n!\nhostname DCR1\n!\nboot-start-marker\n\
+      boot-end-marker\n!\n!\nno logging console\nno aaa new-model\n!\n!\n!\n!\n!\n\
+      !\n!\nno ip domain lookup\n!\n!\n!\nlogin on-success log\n!\n!\n!\n!\n!\n!\n\
+      !\nsubscriber templating\n!\nmultilink bundle-name authenticated\n!\n!\n!\n\
+      crypto pki trustpoint SLA-TrustPoint\n enrollment pkcs12\n revocation-check\
+      \ crl\n!\ncrypto pki trustpoint TP-self-signed-2697992995\n enrollment selfsigned\n\
+      \ subject-name cn=IOS-Self-Signed-Certificate-2697992995\n revocation-check\
+      \ none\n rsakeypair TP-self-signed-2697992995\n!\n!\ncrypto pki certificate\
+      \ chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209 A0030201 02020101\
+      \ 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355 040A1305 43697363\
+      \ 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73 696E6720 526F6F74\
+      \ 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338 30353330 31393438\
+      \ 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030 1E060355 04031317\
+      \ 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130 82012230 0D06092A\
+      \ 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100 A6BCBD96 131E05F7\
+      \ 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147 C655D8D7 9471380D\
+      \ 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239 C659F715 B98C0A59\
+      \ 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96\
+      \ 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD C847A2C5 DAB553EB\
+      \ 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7 948E71D7 AE3BCC84\
+      \ F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62 EA2F505D C7B062A4\
+      \ 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD 3D992327 A8BB03BD\
+      \ 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1 02030100 01A34230\
+      \ 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13 0101FF04 05300301\
+      \ 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17 606AF333 3D3B4C73\
+      \ E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24 D3932A66 86025D9F\
+      \ E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B 77FC460E CD636FDB\
+      \ DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E 1AECA0C2 2189BB5C\
+      \ 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700 6ADF0F0D CF835015\
+      \ 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB\
+      \ E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F 494E8A9E 07B85737\
+      \ F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA EEBC7CF9 8428787B\
+      \ 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049 4D10AB75 27E86F73\
+      \ 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \tquit\ncrypto pki certificate\
+      \ chain TP-self-signed-2697992995\n certificate self-signed 01\n  30820330 30820218\
+      \ A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n  31312F30 2D060355\
+      \ 04031326 494F532D 53656C66 2D536967 6E65642D 43657274\n  69666963 6174652D\
+      \ 32363937 39393239 3935301E 170D3234 30343235 31383330\n  31365A17 0D333430\
+      \ 34323531 38333031 365A3031 312F302D 06035504 03132649\n  4F532D53 656C662D\
+      \ 5369676E 65642D43 65727469 66696361 74652D32 36393739\n  39323939 35308201\
+      \ 22300D06 092A8648 86F70D01 01010500 0382010F 00308201\n  0A028201 0100B5AB\
+      \ E0A4FE56 BFA733C9 EC54E18C 2A1F71D5 01F1831B 89C21790\n  1DA84773 061C68CB\
+      \ 7CAAE2DA 4F0556A5 A8EA153E AF916D47 A1009E7A 46B06946\n  43FFBE4E BDE72C9A\
+      \ DCEADDD6 BEFAF420 5AB8A6E4 0229B201 5B53FA3F A7F01F69\n  583C15CF D5E15CD0\
+      \ F4531426 E1358DE9 69BAA97B 6A4D3933 8CE8C035 4FF90093\n  D73CB67D 88A6FDAA\
+      \ 9276F070 0F7EC369 5200EF96 5CE7DE08 01C293B3 190D0D8D\n  41FB6237 632D76AF\
+      \ FAAFEF59 54FDA2C1 D70EF5EE 303CCFF4 7CADE7A8 C04644AC\n  1BD06072 FBDACD99\
+      \ A8DCC4FD B616D5D9 1A130B02 A714C644 EEAD8BA4 CF2058E6\n  908EB01E 41A3F8AF\
+      \ 51B2B838 31B64970 AF602F6D 30799F14 3DD7805E 4E741F91\n  BE03C202 6F910203\
+      \ 010001A3 53305130 0F060355 1D130101 FF040530 030101FF\n  301F0603 551D2304\
+      \ 18301680 14D60C99 2E374E04 3D6EE7D5 FF0AD67E BBC80840\n  27301D06 03551D0E\
+      \ 04160414 D60C992E 374E043D 6EE7D5FF 0AD67EBB C8084027\n  300D0609 2A864886\
+      \ F70D0101 05050003 82010100 7DB8C89B 25C4734A 4D25818E\n  2E217041 9AF7AABF\
+      \ 7CA47B5F E1841AD0 09EAC1E8 36AACE47 3DB7089B 6871CB01\n  4E7556BA 5FB404E7\
+      \ 3B00CFB7 0791D29F 771981CD B9EF7F72 FE8FA0E5 68029308\n  71CAC42F 4DA61E46\
+      \ 3D37EAB6 AD6CE655 6F9F3751 F1A99906 681F1852 7B07E8C7\n  300E1D53 63DBB7AE\
+      \ BF022871 7C12205F C4790357 3F80751F AD568CEA 8E0D47B6\n  DCC8AE1E 80A00D13\
+      \ 5CB17B2E 09A5BE80 489C6CB8 8E3ECDA2 69B2F970 76B2E127\n  677A0CE7 E5BFE6E1\
+      \ 0A11B6A6 FB82DA2E 8095FF78 65C8CC84 1A816E97 5BDF8A5D\n  CCF41DC2 77F1B3F2\
+      \ 8551AB1B 10CA4612 618DAFFD 909FB023 0FB1C120 4DDFCA49\n  6BA62577 0364F421\
+      \ 09A9419E F10EE9A8 65C81E93\n  \tquit\n!\nlicense udi pid C8000V sn 9UXFLAGDWPY\n\
+      diagnostic bootup level minimal\nmemory free low-watermark processor 70623\n\
+      !\n!\n!\n!\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address\
+      \ 20.0.0.5 255.255.255.255\n!\ninterface GigabitEthernet1\n ip address 203.0.113.1\
+      \ 255.255.255.252\n negotiation auto\n!\ninterface GigabitEthernet2\n ip address\
+      \ 20.0.0.46 255.255.255.252\n ip ospf network point-to-point\n negotiation auto\n\
+      !\ninterface GigabitEthernet3\n ip address 20.0.0.50 255.255.255.252\n ip ospf\
+      \ network point-to-point\n negotiation auto\n!\ninterface GigabitEthernet4\n\
+      \ no ip address\n shutdown\n negotiation auto\n!\nrouter ospf 1\n network 20.0.0.46\
+      \ 0.0.0.0 area 1\n network 20.0.0.50 0.0.0.0 area 1\n default-information originate\n\
+      !\nip forward-protocol nd\nno ip http server\nip http secure-server\n!\nip route\
+      \ 0.0.0.0 0.0.0.0 GigabitEthernet1 203.0.113.2\nip ssh bulk-mode 131072\n!\n\
+      !\n!\n!\n!\ncontrol-plane\n!\n!\nline con 0\n exec-timeout 0 0\n logging synchronous\n\
+      \ stopbits 1\nline aux 0\nline vty 0\n login\n transport input ssh\nline vty\
+      \ 1\n login\n length 0\n transport input ssh\nline vty 2 4\n login\n transport\
+      \ input ssh\n!\ncall-home\n ! If contact email address in call-home is configured\
+      \ as sch-smart-licensing@cisco.com\n ! the email address configured in Cisco\
+      \ Smart License Portal will be used as contact email address to send SCH notifications.\n\
+      \ contact-email-addr sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n\
+      \  active\n  destination transport-method http\n!\n!\n!\n!\n!\n!\nend"
+    cpu_limit: 100
+    cpus: 1
+    data_volume: 0
+    hide_links: false
+    id: n8
+    label: DCR1
+    node_definition: cat8000v
+    ram: 4096
+    tags: []
+    x: 838
+    y: -260
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet2
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet3
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet4
+        slot: 3
+        type: physical
+  - boot_disk_size: 0
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Sat May 11 16:10:20 2024
+      !Time: Sat May 11 16:10:20 2024
+
+      version 9.3(8) Bios:version
+      hostname S2
+      vdc S2 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource u4route-mem minimum 248 maximum 248
+        limit-resource u6route-mem minimum 96 maximum 96
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      feature ospf
+
+      no password strength-check
+      username admin password 5 $5$AIFPJB$k.yk38zHcw4oyAB.ZTQbIuqJy7MG8nTYAX/wArp8Ci6  role network-admin
+      username cisco password 5 $5$BLFPMC$PkmAPA5xbMl1sCElRkt/MIt977.Pw2jxLMvXB7QBsH7  role network-admin
+      username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
+      username mdd password 5 $5$EOAPAG$5vWSQMEoo.rH./kJBW5iN0wx8i6sP3wYFREiFdwIDZ5  role network-admin
+      username mdd passphrase  lifetime 99999 warntime 14 gracetime 3
+      ip domain-lookup
+      ip domain-name mdd.net
+      copp profile strict
+      snmp-server user mdd network-admin auth md5 2140BCFA8ED13DA35BB2FB923F07B8C235EE priv 040B9FC2B58514A219A7E28D6840E3BF59A2 localizedV2key
+      snmp-server user admin network-admin auth md5 3229E521DAB923C1249B9672757376346B62 priv 3328EE2680B438CF6B9A99767474776B3B5F localizedV2key
+      snmp-server user cisco network-admin auth md5 5207E96B8BC107F20FF8DE6968283A657713 priv 320C8E4DBEEB68856CC9C372757376346B7A localizedV2key
+      rmon event 1 log trap public description FATAL(1) owner PMON@FATAL
+      rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 log trap public description ERROR(3) owner PMON@ERROR
+      rmon event 4 log trap public description WARNING(4) owner PMON@WARNING
+      rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO
+
+      vlan 1
+
+      vrf context management
+
+      interface Ethernet1/1
+        no switchport
+        ip address 20.0.0.62/30
+        ip ospf network point-to-point
+        ip router ospf 1 area 0.0.0.1
+        no shutdown
+
+      interface Ethernet1/2
+        no switchport
+        ip address 20.0.0.66/30
+        ip ospf network point-to-point
+        ip router ospf 1 area 0.0.0.1
+        no shutdown
+
+      interface Ethernet1/3
+        no switchport
+        ip address 20.0.0.49/30
+        ip ospf network point-to-point
+        ip router ospf 1 area 0.0.0.1
+        no shutdown
+
+      interface Ethernet1/4
+
+      interface Ethernet1/5
+
+      interface Ethernet1/6
+
+      interface Ethernet1/7
+
+      interface Ethernet1/8
+
+      interface Ethernet1/9
+
+      interface Ethernet1/10
+
+      interface Ethernet1/11
+
+      interface Ethernet1/12
+
+      interface Ethernet1/13
+
+      interface Ethernet1/14
+
+      interface Ethernet1/15
+
+      interface Ethernet1/16
+
+      interface Ethernet1/17
+
+      interface Ethernet1/18
+
+      interface Ethernet1/19
+
+      interface Ethernet1/20
+
+      interface Ethernet1/21
+
+      interface Ethernet1/22
+
+      interface Ethernet1/23
+
+      interface Ethernet1/24
+
+      interface Ethernet1/25
+
+      interface Ethernet1/26
+
+      interface Ethernet1/27
+
+      interface Ethernet1/28
+
+      interface Ethernet1/29
+
+      interface Ethernet1/30
+
+      interface Ethernet1/31
+
+      interface Ethernet1/32
+
+      interface Ethernet1/33
+
+      interface Ethernet1/34
+
+      interface Ethernet1/35
+
+      interface Ethernet1/36
+
+      interface Ethernet1/37
+
+      interface Ethernet1/38
+
+      interface Ethernet1/39
+
+      interface Ethernet1/40
+
+      interface Ethernet1/41
+
+      interface Ethernet1/42
+
+      interface Ethernet1/43
+
+      interface Ethernet1/44
+
+      interface Ethernet1/45
+
+      interface Ethernet1/46
+
+      interface Ethernet1/47
+
+      interface Ethernet1/48
+
+      interface Ethernet1/49
+
+      interface Ethernet1/50
+
+      interface Ethernet1/51
+
+      interface Ethernet1/52
+
+      interface Ethernet1/53
+
+      interface Ethernet1/54
+
+      interface Ethernet1/55
+
+      interface Ethernet1/56
+
+      interface Ethernet1/57
+
+      interface Ethernet1/58
+
+      interface Ethernet1/59
+
+      interface Ethernet1/60
+
+      interface Ethernet1/61
+
+      interface Ethernet1/62
+
+      interface Ethernet1/63
+
+      interface Ethernet1/64
+
+      interface mgmt0
+        vrf member management
+
+      interface loopback0
+        ip address 20.0.0.2/32
+        ip router ospf 1 area 0.0.0.1
+      icam monitor scale
+
+      line console
+        exec-timeout 0
+      line vty
+        exec-timeout 0
+      boot nxos bootflash:/nxos.9.3.8.bin sup-1
+      router ospf 1
+        router-id 20.0.0.2
+
+      no logging console
+    cpu_limit: 100
+    cpus: 2
+    data_volume: 0
+    hide_links: false
+    id: n9
+    label: S2
+    node_definition: nxosv9000
+    ram: 8192
+    tags: []
+    x: 960
+    y: -392
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: mgmt0
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet1/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet1/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet1/3
+        slot: 3
+        type: physical
+  - boot_disk_size: 0
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Sat May 11 14:36:21 2024
+      !Time: Sat May 11 14:36:21 2024
+
+      version 9.3(8) Bios:version
+      hostname L2
+      vdc L2 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource u4route-mem minimum 248 maximum 248
+        limit-resource u6route-mem minimum 96 maximum 96
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      feature ospf
+
+      no password strength-check
+      username admin password 5 $5$JNHONJ$k8xVXUl1zSXZnZpxdE8b.kMBFFBFg.IwVha8YDErMm.  role network-admin
+      username cisco password 5 $5$OGDKHJ$23SptGoDwi8tBCaLhD7GDwitHCUf.D7oiSLqYvrfCv.  role network-admin
+      username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
+      username mdd password 5 $5$MGAGJA$ZwWgZy7xSgF2aHHWY7ZavQb4u.4ohDq8tee1rinHHuB  role network-admin
+      username mdd passphrase  lifetime 99999 warntime 14 gracetime 3
+      ip domain-lookup
+      ip domain-name mdd.net
+      copp profile strict
+      snmp-server user mdd network-admin auth md5 330CA7B2A5A4772AEBE4656536AC3B5B44D5 priv 367FACFE84D31718D9DD4A5024FA634F14CA localizedV2key
+      snmp-server user admin network-admin auth md5 165A3E2C2349EB67A7783A4B5D9DAF2E0DB8 priv 164B6173284AE177B96A38180CC1DC3717BA localizedV2key
+      snmp-server user cisco network-admin auth md5 49476B24523FDB42804B100200F7947917AA priv 5236233A536A9B519B672E511B94917110F1 localizedV2key
+      rmon event 1 log trap public description FATAL(1) owner PMON@FATAL
+      rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 log trap public description ERROR(3) owner PMON@ERROR
+      rmon event 4 log trap public description WARNING(4) owner PMON@WARNING
+      rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO
+
+      vlan 1
+
+      vrf context management
+
+      interface Ethernet1/1
+        no switchport
+        ip address 20.0.0.57/30
+        ip ospf network point-to-point
+        ip router ospf 1 area 0.0.0.1
+        no shutdown
+
+      interface Ethernet1/2
+        no switchport
+        ip address 20.0.0.65/30
+        ip ospf network point-to-point
+        ip router ospf 1 area 0.0.0.1
+        no shutdown
+
+      interface Ethernet1/3
+
+      interface Ethernet1/4
+
+      interface Ethernet1/5
+
+      interface Ethernet1/6
+
+      interface Ethernet1/7
+
+      interface Ethernet1/8
+
+      interface Ethernet1/9
+
+      interface Ethernet1/10
+
+      interface Ethernet1/11
+
+      interface Ethernet1/12
+
+      interface Ethernet1/13
+
+      interface Ethernet1/14
+
+      interface Ethernet1/15
+
+      interface Ethernet1/16
+
+      interface Ethernet1/17
+
+      interface Ethernet1/18
+
+      interface Ethernet1/19
+
+      interface Ethernet1/20
+
+      interface Ethernet1/21
+
+      interface Ethernet1/22
+
+      interface Ethernet1/23
+
+      interface Ethernet1/24
+
+      interface Ethernet1/25
+
+      interface Ethernet1/26
+
+      interface Ethernet1/27
+
+      interface Ethernet1/28
+
+      interface Ethernet1/29
+
+      interface Ethernet1/30
+
+      interface Ethernet1/31
+
+      interface Ethernet1/32
+
+      interface Ethernet1/33
+
+      interface Ethernet1/34
+
+      interface Ethernet1/35
+
+      interface Ethernet1/36
+
+      interface Ethernet1/37
+
+      interface Ethernet1/38
+
+      interface Ethernet1/39
+
+      interface Ethernet1/40
+
+      interface Ethernet1/41
+
+      interface Ethernet1/42
+
+      interface Ethernet1/43
+
+      interface Ethernet1/44
+
+      interface Ethernet1/45
+
+      interface Ethernet1/46
+
+      interface Ethernet1/47
+
+      interface Ethernet1/48
+
+      interface Ethernet1/49
+
+      interface Ethernet1/50
+
+      interface Ethernet1/51
+
+      interface Ethernet1/52
+
+      interface Ethernet1/53
+
+      interface Ethernet1/54
+
+      interface Ethernet1/55
+
+      interface Ethernet1/56
+
+      interface Ethernet1/57
+
+      interface Ethernet1/58
+
+      interface Ethernet1/59
+
+      interface Ethernet1/60
+
+      interface Ethernet1/61
+
+      interface Ethernet1/62
+
+      interface Ethernet1/63
+
+      interface Ethernet1/64
+
+      interface mgmt0
+        vrf member management
+
+      interface loopback0
+        ip address 20.0.0.4/32
+        ip router ospf 1 area 0.0.0.1
+      icam monitor scale
+
+      line console
+        exec-timeout 0
+      line vty
+        exec-timeout 0
+      boot nxos bootflash:/nxos.9.3.8.bin sup-1
+      router ospf 1
+        router-id 20.0.0.4
+
+      no logging console
+    cpu_limit: 100
+    cpus: 2
+    data_volume: 0
+    hide_links: false
+    id: n10
+    label: L2
+    node_definition: nxosv9000
+    ram: 8192
+    tags: []
+    x: 960
+    y: -575
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: mgmt0
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet1/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet1/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet1/3
+        slot: 3
+        type: physical
+  - boot_disk_size: 0
+    configuration: "Building configuration...\n\nCurrent configuration : 12897 bytes\n\
+      !\n! Last configuration change at 14:48:25 UTC Sat May 11 2024\n!\nversion 17.11\n\
+      service timestamps debug datetime msec\nservice timestamps log datetime msec\n\
+      service call-home\nplatform punt-keepalive disable-kernel-core\n!\nhostname\
+      \ C1\n!\n!\nvrf definition Mgmt-vrf\n !\n address-family ipv4\n exit-address-family\n\
+      \ !\n address-family ipv6\n exit-address-family\n!\nno logging console\nno aaa\
+      \ new-model\nswitch 1 provision c9kv-uadp-8p\n!\n!\n!\n!\nip routing\n!\nno\
+      \ ip domain lookup\nip domain name mdd.net\n!\n!\n!\nlogin on-success log\n\
+      !\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint SLA-TrustPoint\n enrollment pkcs12\n\
+      \ revocation-check crl\n!\ncrypto pki trustpoint TP-self-signed-816674771\n\
+      \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-816674771\n\
+      \ revocation-check none\n rsakeypair TP-self-signed-816674771\n!\n!\ncrypto\
+      \ pki certificate chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209\
+      \ A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355\
+      \ 040A1305 43697363 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73\
+      \ 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338\
+      \ 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030\
+      \ 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130\
+      \ 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100\
+      \ A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147\
+      \ C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239\
+      \ C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9\
+      \ 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD\
+      \ C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7\
+      \ 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62\
+      \ EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD\
+      \ 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1\
+      \ 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13\
+      \ 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17\
+      \ 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24\
+      \ D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B\
+      \ 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E\
+      \ 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700\
+      \ 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6\
+      \ 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F\
+      \ 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA\
+      \ EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049\
+      \ 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \t\
+      quit\ncrypto pki certificate chain TP-self-signed-816674771\n certificate self-signed\
+      \ 01\n  3082032E 30820216 A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n\
+      \  30312E30 2C060355 04031325 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+      \  69666963 6174652D 38313636 37343737 31301E17 0D323430 34313731 37313930\n\
+      \  325A170D 33343034 31373137 31393032 5A303031 2E302C06 03550403 1325494F\n\
+      \  532D5365 6C662D53 69676E65 642D4365 72746966 69636174 652D3831 36363734\n\
+      \  37373130 82012230 0D06092A 864886F7 0D010101 05000382 010F0030 82010A02\n\
+      \  82010100 B00C9BB3 F1B81C56 ECE8A489 ACABDAC2 506E78B7 F82A7253 8CEC5E35\n\
+      \  44D2C7F4 14155836 AA435A7B 201075C2 048A0B40 20165EEE A3F343C6 9F4F19B0\n\
+      \  538ADA77 132DCF1E 34127E51 7E5DDE6F 1CFD580A E290BEC2 545D9D72 E1652D79\n\
+      \  67C16F63 F67B83A0 1B828E0D C79B6762 B925908B 1700D725 76EF3101 948D515C\n\
+      \  337A3C0D 5772B340 C250AA04 E8046FC8 FE9DE1DA D0E443D0 836AB620 44591B58\n\
+      \  EA6A7C6C 1AA6E3E7 A8399204 2FBBA2DB 0FE4B332 11F88EA4 A6C4402A 78DA065A\n\
+      \  25B55F15 B045F65A 7DDEC306 E2359999 57D920E3 5B5BE514 8460008A E279246F\n\
+      \  7B1D4682 397DEDBF D393627C 51F110BC 1DD08C54 029E57E3 413360A2 ACAB9949\n\
+      \  BF012AF5 02030100 01A35330 51300F06 03551D13 0101FF04 05300301 01FF301F\n\
+      \  0603551D 23041830 1680141E CA4D3764 93E8285C 1DF2A905 527FCA98 96F8E030\n\
+      \  1D060355 1D0E0416 04141ECA 4D376493 E8285C1D F2A90552 7FCA9896 F8E0300D\n\
+      \  06092A86 4886F70D 01010505 00038201 01005B44 A70E8E93 9A1BFC6F 8BDE62D6\n\
+      \  562E7B05 AA924A8F 21B163F8 21D76CF9 E1EAE78D 6729D7EC F3309C01 E1151529\n\
+      \  98E4BE00 DC3C2F09 46B67071 1784D826 DAB4F1AD 0813E303 0BC472D3 F20BE759\n\
+      \  7AC683CB 414CF62E 742B90E4 D9D7D517 53DD55D9 C31C51F9 3F5E59B0 A2B272D9\n\
+      \  0D8168BF 92DA5F93 A82C4CBE 9BAFD782 C9592CA1 D5028A72 C71F0014 0CA599F7\n\
+      \  AC2FEC8D 850E7383 6A6978DB 0BEEAEFB 31539BE9 C004CA36 B230B922 0AEB1BA2\n\
+      \  036EBF57 38FBFC4B C4E74DCB D2158609 165E32BE E8330CB6 7BC4AF14 7DC57F11\n\
+      \  B219195F CBE7232F 5A5D26E0 2FA9CEE6 D7DE1C5E E7542FD7 3F034117 839D83FA\n\
+      \  0162C2C3 4420E6F0 238D2A18 C48E32E7 3CFB\n  \tquit\n!\n!\nlicense boot level\
+      \ network-advantage\nmemory free low-watermark processor 180924\n!\ndiagnostic\
+      \ bootup level minimal\n!\nspanning-tree mode rapid-pvst\nspanning-tree extend\
+      \ system-id\n!\n!\n!\n!\nusername admin privilege 15 secret 9 $9$7bFvf1YRKgY0OU$YaefbE5PxSrjNms1awFepEu2U40SXfDJVhCxaNhwYrE\n\
+      username mdd privilege 15 secret 9 $9$Hw8kqE9J6opXAk$fcCXw9YiFyPmq5btsGYR689m8mswc9Cur6q0Wcy78V6\n\
+      !\nredundancy\n mode sso\ncrypto engine compliance shield disable\n!\n!\n!\n\
+      !\nvlan dot1q tag native\n!\n!\nclass-map match-any system-cpp-police-mac-learning\n\
+      \  description MAC Learning\nclass-map match-any system-cpp-police-mcast-data\n\
+      \  description MCAST Data traffic\nclass-map match-any system-cpp-police-topology-control\n\
+      \  description Topology control\nclass-map match-any system-cpp-police-unknown-uc\n\
+      \  description Unknown UC Packets\nclass-map match-any system-cpp-police-sw-forward\n\
+      \  description Sw forwarding, L2 LVX data, LOGGING\nclass-map match-any system-cpp-police-proto-snoop-v6\n\
+      \  description Protocol snooping v6\nclass-map match-any system-cpp-default\n\
+      \  description EWLC control, EWLC data, Inter FED\nclass-map match-any system-cpp-police-proto-snoop-v4\n\
+      \  description Protocol snooping v4\nclass-map match-any system-cpp-police-rip-bc\n\
+      \  description RIP Broadcast\nclass-map match-any system-cpp-police-sys-data\n\
+      \  description Learning cache ovfl, High Rate App, Exception, EGR Exception,\
+      \ NFL SAMPLED DATA, RPF Failed\nclass-map match-any system-cpp-police-svl-ctrl\n\
+      \  description NGSVL IPC Traffic\nclass-map match-any system-cpp-police-mpls-oam\n\
+      \  description MPLS OAM (traceroute, ping etc)\nclass-map match-any system-cpp-police-punt-webauth\n\
+      \  description Punt Webauth\nclass-map match-any system-cpp-police-l2lvx-control\n\
+      \  description L2 LVX control packets\nclass-map match-any system-cpp-police-dhcp-v6\n\
+      \  description DHCP V6\nclass-map match-any system-cpp-police-dhcp-v4\n  description\
+      \ DHCP V4\nclass-map match-any system-cpp-police-forus\n  description Forus\
+      \ Address resolution and Forus traffic\nclass-map match-any system-cpp-police-icmp-v6\n\
+      \  description ICMP redirect, ICMP_GEN over IPv6\nclass-map match-any system-cpp-police-multicast-end-station\n\
+      \  description MCAST END STATION\nclass-map match-any system-cpp-police-icmp-v4\n\
+      \  description ICMP redirect, ICMP_GEN over IPv4\nclass-map match-any system-cpp-police-ospf-v6\n\
+      \  description OSPF over IPv6\nclass-map match-any system-cpp-police-ospf-v4\n\
+      \  description OSPF over IPv4\nclass-map match-any system-cpp-police-arp\n \
+      \ description Address Resolution Protocol\nclass-map match-any system-cpp-police-igrp-v4\n\
+      \  description IGRP and EIGRP over IPv4\nclass-map match-any system-cpp-police-fhrp-v4\n\
+      \  description VRRP, HSRP, GLBP over IPv4\nclass-map match-any system-cpp-police-igrp-v6\n\
+      \  description IGRP and EIGRP over IPv6\nclass-map match-any system-cpp-police-fhrp-v6\n\
+      \  description VRRP, HSRP, GLBP over IPv6\nclass-map match-any system-cpp-police-fragment-v4\n\
+      \  description IPv4 Fragmented Packets\nclass-map match-any system-cpp-police-fragment-v6\n\
+      \  description IPv6 Fragmented Packets\nclass-map match-any system-cpp-police-multicast\n\
+      \  description Transit Traffic and MCAST Data\nclass-map match-any system-cpp-police-ldp-v4\n\
+      \  description LDP (MPLS) over IPv4\nclass-map match-any system-cpp-police-ldp-v6\n\
+      \  description LDP (MPLS) over IPv6\nclass-map match-any system-cpp-police-l2-control\n\
+      \  description L2 control\nclass-map match-any system-cpp-police-dot1x-auth\n\
+      \  description DOT1X Auth\nclass-map match-any system-cpp-police-data\n  description\
+      \ ICMP redirect, ICMP_GEN and BROADCAST\nclass-map match-any system-cpp-police-lacp\n\
+      \  description LACP control traffic for ether channel\nclass-map match-any system-cpp-police-bgp-v4\n\
+      \  description BGP sessions over IPv4\nclass-map match-any system-cpp-police-stackwise-virt-control\n\
+      \  description Stackwise Virtual\nclass-map match-any system-cpp-police-bgp-v6\n\
+      \  description BGP sessions over IPv6\nclass-map match-any system-cpp-police-rip-v6\n\
+      \  description RIP over IPv6\nclass-map match-any system-cpp-police-alt-sw-forward\n\
+      \  description Alternate Software forwarding\nclass-map match-any system-cpp-police-rip-v4\n\
+      \  description RIP over IPv4\nclass-map match-any system-cpp-police-mtu-ttl-fail\n\
+      \  description MTU/TTL 0/TTL 1 failures\nclass-map match-any system-cpp-police-isis\n\
+      \  description IS-IS protocol\nclass-map match-any system-cpp-police-bfd-v4\n\
+      \  description BFD and BFD Echo over IPv4\nclass-map match-any system-cpp-police-udp-v4\n\
+      \  description UDP V4\nclass-map match-any system-cpp-police-mcast-rpf-fail\n\
+      \  description MCAST Data RPF fail\nclass-map match-any system-cpp-police-bfd-v6\n\
+      \  description BFD and BFD Echo over IPv6\nclass-map match-any system-cpp-police-udp-v6\n\
+      \  description UDP V6\nclass-map match-any non-client-nrt-class\nclass-map match-any\
+      \ system-cpp-police-tcp-v6\n  description TCP V6\nclass-map match-any system-cpp-police-tcp-v4\n\
+      \  description TCP V4\nclass-map match-any system-cpp-default-v6\n  description\
+      \ Inter FED Traffic\nclass-map match-any system-cpp-police-routing-control\n\
+      \  description Routing control and Low Latency\nclass-map match-any system-cpp-police-protocol-snooping\n\
+      \  description Protocol snooping\nclass-map match-any system-cpp-default-v4\n\
+      \  description Inter FED Traffic\nclass-map match-any system-cpp-police-dhcp-snooping\n\
+      \  description DHCP snooping\nclass-map match-any system-cpp-police-svl-ipc\n\
+      \  description NGSVL IPC Traffic\nclass-map match-any system-cpp-police-system-critical\n\
+      \  description System Critical and Gold Pkt\nclass-map match-any system-cpp-police-mcast-ctrl-v4\n\
+      \  description MCAST control packets over IPv4\nclass-map match-any system-cpp-police-mcast-register-v4\n\
+      \  description MCAST v4 Register traffic\nclass-map match-any system-cpp-police-lisp-ctrl\n\
+      \  description LISP Control Packets\nclass-map match-any system-cpp-police-mcast-ctrl-v6\n\
+      \  description MCAST control packets over IPv6\nclass-map match-any system-cpp-police-mcast-register-v6\n\
+      \  description MCAST v6 Register traffic\n!\npolicy-map system-cpp-policy\n\
+      !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address 10.0.0.78\
+      \ 255.255.255.255\n!\ninterface Port-channel1\n no switchport\n ip address 10.0.0.41\
+      \ 255.255.255.252\n ip ospf network point-to-point\n!\ninterface GigabitEthernet0/0\n\
+      \ vrf forwarding Mgmt-vrf\n ip address dhcp\n negotiation auto\n!\ninterface\
+      \ GigabitEthernet1/0/1\n no switchport\n ip address 10.0.0.30 255.255.255.252\n\
+      \ ip ospf network point-to-point\n!\ninterface GigabitEthernet1/0/2\n no switchport\n\
+      \ ip address 10.0.0.34 255.255.255.252\n ip ospf network point-to-point\n!\n\
+      interface GigabitEthernet1/0/3\n no switchport\n no ip address\n channel-group\
+      \ 1 mode desirable\n!\ninterface GigabitEthernet1/0/4\n no switchport\n no ip\
+      \ address\n channel-group 1 mode desirable\n!\ninterface GigabitEthernet1/0/5\n\
+      \ no switchport\n ip address 10.0.0.45 255.255.255.252\n ip ospf network point-to-point\n\
+      !\ninterface GigabitEthernet1/0/6\n no switchport\n ip address 10.0.0.49 255.255.255.252\n\
+      \ ip ospf network point-to-point\n!\ninterface GigabitEthernet1/0/7\n!\ninterface\
+      \ GigabitEthernet1/0/8\n!\ninterface Vlan1\n no ip address\n shutdown\n!\nrouter\
+      \ ospf 1\n router-id 10.0.0.78\n passive-interface Loopback0\n network 10.0.0.30\
+      \ 0.0.0.0 area 0\n network 10.0.0.34 0.0.0.0 area 0\n network 10.0.0.41 0.0.0.0\
+      \ area 0\n network 10.0.0.45 0.0.0.0 area 0\n network 10.0.0.49 0.0.0.0 area\
+      \ 0\n network 10.0.0.78 0.0.0.0 area 0\n!\nip forward-protocol nd\nip tcp selective-ack\n\
+      ip tcp mss 1280\nip tcp window-size 212000\nip http server\nip http authentication\
+      \ local\nip http secure-server\nip ssh bulk-mode 131072\nip ssh server algorithm\
+      \ mac hmac-sha1 hmac-sha2-256 hmac-sha2-512\nip ssh server algorithm kex diffie-hellman-group14-sha1\n\
+      !\n!\n!\n!\n!\n!\ncontrol-plane\n service-policy input system-cpp-policy\n!\n\
+      !\nline con 0\n exec-timeout 0 0\n logging synchronous\n stopbits 1\nline vty\
+      \ 0 4\n login local\n transport input ssh\nline vty 5 15\n login local\n transport\
+      \ input ssh\n!\ncall-home\n ! If contact email address in call-home is configured\
+      \ as sch-smart-licensing@cisco.com\n ! the email address configured in Cisco\
+      \ Smart License Portal will be used as contact email address to send SCH notifications.\n\
+      \ contact-email-addr sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n\
+      \  active\n  destination transport-method http\n!\n!\n!\n!\n!\nend"
+    cpu_limit: 100
+    cpus: 4
+    data_volume: 0
+    hide_links: false
+    id: n11
+    label: C1
+    node_definition: catalyst9000v_dd
+    ram: 18432
+    tags: []
+    x: 725
+    y: 242
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet1/0/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet1/0/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet1/0/3
+        slot: 3
+        type: physical
+      - id: i5
+        label: GigabitEthernet1/0/4
+        slot: 4
+        type: physical
+      - id: i6
+        label: GigabitEthernet1/0/5
+        slot: 5
+        type: physical
+      - id: i7
+        label: GigabitEthernet1/0/6
+        slot: 6
+        type: physical
+      - id: i8
+        label: GigabitEthernet1/0/7
+        slot: 7
+        type: physical
+      - id: i9
+        label: GigabitEthernet1/0/8
+        slot: 8
+        type: physical
+  - boot_disk_size: 0
+    configuration: "Building configuration...\n\nCurrent configuration : 12867 bytes\n\
+      !\n! Last configuration change at 14:48:27 UTC Sat May 11 2024\n!\nversion 17.11\n\
+      service timestamps debug datetime msec\nservice timestamps log datetime msec\n\
+      service call-home\nplatform punt-keepalive disable-kernel-core\n!\nhostname\
+      \ C2\n!\n!\nvrf definition Mgmt-vrf\n !\n address-family ipv4\n exit-address-family\n\
+      \ !\n address-family ipv6\n exit-address-family\n!\nno logging console\nno aaa\
+      \ new-model\nswitch 1 provision c9kv-uadp-8p\n!\n!\n!\n!\nip routing\n!\nip\
+      \ domain name mdd.net\n!\n!\n!\nlogin on-success log\n!\n!\n!\n!\n!\n!\n!\n\
+      !\ncrypto pki trustpoint SLA-TrustPoint\n enrollment pkcs12\n revocation-check\
+      \ crl\n!\ncrypto pki trustpoint TP-self-signed-816674771\n enrollment selfsigned\n\
+      \ subject-name cn=IOS-Self-Signed-Certificate-816674771\n revocation-check none\n\
+      \ rsakeypair TP-self-signed-816674771\n!\n!\ncrypto pki certificate chain SLA-TrustPoint\n\
+      \ certificate ca 01\n  30820321 30820209 A0030201 02020101 300D0609 2A864886\
+      \ F70D0101 0B050030\n  32310E30 0C060355 040A1305 43697363 6F312030 1E060355\
+      \ 04031317 43697363\n  6F204C69 63656E73 696E6720 526F6F74 20434130 1E170D31\
+      \ 33303533 30313934\n  3834375A 170D3338 30353330 31393438 34375A30 32310E30\
+      \ 0C060355 040A1305\n  43697363 6F312030 1E060355 04031317 43697363 6F204C69\
+      \ 63656E73 696E6720\n  526F6F74 20434130 82012230 0D06092A 864886F7 0D010101\
+      \ 05000382 010F0030\n  82010A02 82010100 A6BCBD96 131E05F7 145EA72C 2CD686E6\
+      \ 17222EA1 F1EFF64D\n  CBB4C798 212AA147 C655D8D7 9471380D 8711441E 1AAF071A\
+      \ 9CAE6388 8A38E520\n  1C394D78 462EF239 C659F715 B98C0A59 5BBB5CBD 0CFEBEA3\
+      \ 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96 6FA68957 A2617DE7\
+      \ 104FDC5F EA2956AC\n  7390A3EB 2B5436AD C847A2C5 DAB553EB 69A9A535 58E9F3E3\
+      \ C0BD23CF 58BD7188\n  68E69491 20F320E7 948E71D7 AE3BCC84 F10684C7 4BC8E00F\
+      \ 539BA42B 42C68BB7\n  C7479096 B4CB2D62 EA2F505D C7B062A4 6811D95B E8250FC4\
+      \ 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD 3D992327 A8BB03BD 4E6D7069 7CBADF8B\
+      \ DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1 02030100 01A34230 40300E06 03551D0F\
+      \ 0101FF04 04030201\n  06300F06 03551D13 0101FF04 05300301 01FF301D 0603551D\
+      \ 0E041604 1449DC85\n  4B3D31E5 1B3E6A17 606AF333 3D3B4C73 E8300D06 092A8648\
+      \ 86F70D01 010B0500\n  03820101 00507F24 D3932A66 86025D9F E838AE5C 6D4DF6B0\
+      \ 49631C78 240DA905\n  604EDCDE FF4FED2B 77FC460E CD636FDB DD44681E 3A5673AB\
+      \ 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E 1AECA0C2 2189BB5C 8FA85686 CD98B646\
+      \ 5575B146 8DFC66A8\n  467A3DF4 4D565700 6ADF0F0D CF835015 3C04FF7C 21E878AC\
+      \ 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB E973DE7F 5BDDEB86\
+      \ C71E3B49 1765308B\n  5FB0DA06 B92AFE7F 494E8A9E 07B85737 F3A58BE1 1A48A229\
+      \ C37C1E69 39F08678\n  80DDCD16 D6BACECA EEBC7CF9 8428787B 35202CDC 60E4616A\
+      \ B623CDBD 230E3AFB\n  418616A9 4093E049 4D10AB75 27E86F73 932E35B5 8862FDAE\
+      \ 0275156F 719BB2F0\n  D697DF7F 28\n  \tquit\ncrypto pki certificate chain TP-self-signed-816674771\n\
+      \ certificate self-signed 01\n  3082032E 30820216 A0030201 02020101 300D0609\
+      \ 2A864886 F70D0101 05050030\n  30312E30 2C060355 04031325 494F532D 53656C66\
+      \ 2D536967 6E65642D 43657274\n  69666963 6174652D 38313636 37343737 31301E17\
+      \ 0D323430 34313731 37313834\n  355A170D 33343034 31373137 31383435 5A303031\
+      \ 2E302C06 03550403 1325494F\n  532D5365 6C662D53 69676E65 642D4365 72746966\
+      \ 69636174 652D3831 36363734\n  37373130 82012230 0D06092A 864886F7 0D010101\
+      \ 05000382 010F0030 82010A02\n  82010100 8CB0B669 B36F1574 CC580127 675F8F5E\
+      \ 0656B09A AAC9B8D2 2DC0957B\n  FEF31811 677AC246 80AF8994 3137C23C 98F40B4B\
+      \ 0BFC0DEF 6B144E65 10C523A1\n  68815373 30BBE156 60953513 F6450539 DA54A0B8\
+      \ 2B756668 EBFFC117 97975552\n  7E12DBCD 7BE6FCDB ADDA5999 1FD2889D 8F56F127\
+      \ 8D670604 CD539B0B 10AD3145\n  447AA080 73279780 51807841 C9FB2289 CE4B74C4\
+      \ 522F55C7 F81EC18D BC19E93E\n  376C2C96 6668827E 7C5D7294 55DBD773 635EBE82\
+      \ B0CC07EF 3D2C3395 24BC33C9\n  2C11AA63 9B9396A3 565AEBAA DC71FC0C EAA10492\
+      \ DD879C70 23BCDCFB 35BAB4E0\n  CA02B43F 6639D29D A0BE2A46 EEE77F83 3C542A7D\
+      \ C0DE79AE D62C348C 1467225E\n  F54F4B0F 02030100 01A35330 51300F06 03551D13\
+      \ 0101FF04 05300301 01FF301F\n  0603551D 23041830 168014AD 2C25102C BA74E70A\
+      \ 091E2467 9183F530 E4828330\n  1D060355 1D0E0416 0414AD2C 25102CBA 74E70A09\
+      \ 1E246791 83F530E4 8283300D\n  06092A86 4886F70D 01010505 00038201 01003783\
+      \ 1A98EDBC 9E0B7972 FFA1FBDE\n  C2117F33 6B7A87C7 E918F361 294D6751 406BBBC3\
+      \ 106A4147 459EF547 060573B5\n  B466AF6B 5F8EA9DC 02C5CAD9 1F8725AD 9554EAA1\
+      \ 1D81D258 C2AE6908 E78B73AE\n  9616B700 7EB7D837 481E22B4 CCCB6277 C52076B1\
+      \ B3691191 19A339B5 8E5E1C47\n  08F6C9DD F93F07FA 5518FB9E EBB3A28B 98E888D4\
+      \ 223DBBE2 B10A297F A4943E8D\n  F38F9C7F BDDCD86D FA079E9F 6469F769 63DD29CD\
+      \ 33CEF710 6D058459 AC1EA5FA\n  99AFE69D A90090D6 872FD5F6 A30D784A AE2D4339\
+      \ 912CA7C1 759FFDB3 E95688D4\n  CB222E23 46CC8824 DED7466F 6E430C4D FEFAA3EB\
+      \ 226DD750 41E8F8C3 58593296\n  ED58EA48 04A5D003 5572EC75 13ED24B1 6725\n \
+      \ \tquit\n!\n!\nlicense boot level network-advantage\nmemory free low-watermark\
+      \ processor 180924\n!\ndiagnostic bootup level minimal\n!\nspanning-tree mode\
+      \ rapid-pvst\nspanning-tree extend system-id\n!\n!\n!\n!\nusername admin privilege\
+      \ 15 secret 9 $9$nbMCcourS/5/mk$pUlOj8Xrutl5jxIHXWgxMdfKugIj4rz0CwuN1gemMQo\n\
+      username mdd privilege 15 secret 9 $9$X/ZyDdc0sM5Wk.$rEglVYMrZYRxXG0v0Of7LjjQbbmZ6kRIeMrVi61hW0g\n\
+      !\nredundancy\n mode sso\ncrypto engine compliance shield disable\n!\n!\n!\n\
+      !\nvlan dot1q tag native\n!\n!\nclass-map match-any system-cpp-police-mac-learning\n\
+      \  description MAC Learning\nclass-map match-any system-cpp-police-mcast-data\n\
+      \  description MCAST Data traffic\nclass-map match-any system-cpp-police-topology-control\n\
+      \  description Topology control\nclass-map match-any system-cpp-police-unknown-uc\n\
+      \  description Unknown UC Packets\nclass-map match-any system-cpp-police-sw-forward\n\
+      \  description Sw forwarding, L2 LVX data, LOGGING\nclass-map match-any system-cpp-police-proto-snoop-v6\n\
+      \  description Protocol snooping v6\nclass-map match-any system-cpp-default\n\
+      \  description EWLC control, EWLC data, Inter FED\nclass-map match-any system-cpp-police-proto-snoop-v4\n\
+      \  description Protocol snooping v4\nclass-map match-any system-cpp-police-rip-bc\n\
+      \  description RIP Broadcast\nclass-map match-any system-cpp-police-sys-data\n\
+      \  description Learning cache ovfl, High Rate App, Exception, EGR Exception,\
+      \ NFL SAMPLED DATA, RPF Failed\nclass-map match-any system-cpp-police-svl-ctrl\n\
+      \  description NGSVL IPC Traffic\nclass-map match-any system-cpp-police-mpls-oam\n\
+      \  description MPLS OAM (traceroute, ping etc)\nclass-map match-any system-cpp-police-punt-webauth\n\
+      \  description Punt Webauth\nclass-map match-any system-cpp-police-l2lvx-control\n\
+      \  description L2 LVX control packets\nclass-map match-any system-cpp-police-dhcp-v6\n\
+      \  description DHCP V6\nclass-map match-any system-cpp-police-dhcp-v4\n  description\
+      \ DHCP V4\nclass-map match-any system-cpp-police-forus\n  description Forus\
+      \ Address resolution and Forus traffic\nclass-map match-any system-cpp-police-icmp-v6\n\
+      \  description ICMP redirect, ICMP_GEN over IPv6\nclass-map match-any system-cpp-police-multicast-end-station\n\
+      \  description MCAST END STATION\nclass-map match-any system-cpp-police-icmp-v4\n\
+      \  description ICMP redirect, ICMP_GEN over IPv4\nclass-map match-any system-cpp-police-ospf-v6\n\
+      \  description OSPF over IPv6\nclass-map match-any system-cpp-police-ospf-v4\n\
+      \  description OSPF over IPv4\nclass-map match-any system-cpp-police-arp\n \
+      \ description Address Resolution Protocol\nclass-map match-any system-cpp-police-igrp-v4\n\
+      \  description IGRP and EIGRP over IPv4\nclass-map match-any system-cpp-police-fhrp-v4\n\
+      \  description VRRP, HSRP, GLBP over IPv4\nclass-map match-any system-cpp-police-igrp-v6\n\
+      \  description IGRP and EIGRP over IPv6\nclass-map match-any system-cpp-police-fhrp-v6\n\
+      \  description VRRP, HSRP, GLBP over IPv6\nclass-map match-any system-cpp-police-fragment-v4\n\
+      \  description IPv4 Fragmented Packets\nclass-map match-any system-cpp-police-fragment-v6\n\
+      \  description IPv6 Fragmented Packets\nclass-map match-any system-cpp-police-multicast\n\
+      \  description Transit Traffic and MCAST Data\nclass-map match-any system-cpp-police-ldp-v4\n\
+      \  description LDP (MPLS) over IPv4\nclass-map match-any system-cpp-police-ldp-v6\n\
+      \  description LDP (MPLS) over IPv6\nclass-map match-any system-cpp-police-l2-control\n\
+      \  description L2 control\nclass-map match-any system-cpp-police-dot1x-auth\n\
+      \  description DOT1X Auth\nclass-map match-any system-cpp-police-data\n  description\
+      \ ICMP redirect, ICMP_GEN and BROADCAST\nclass-map match-any system-cpp-police-lacp\n\
+      \  description LACP control traffic for ether channel\nclass-map match-any system-cpp-police-bgp-v4\n\
+      \  description BGP sessions over IPv4\nclass-map match-any system-cpp-police-stackwise-virt-control\n\
+      \  description Stackwise Virtual\nclass-map match-any system-cpp-police-bgp-v6\n\
+      \  description BGP sessions over IPv6\nclass-map match-any system-cpp-police-rip-v6\n\
+      \  description RIP over IPv6\nclass-map match-any system-cpp-police-alt-sw-forward\n\
+      \  description Alternate Software forwarding\nclass-map match-any system-cpp-police-rip-v4\n\
+      \  description RIP over IPv4\nclass-map match-any system-cpp-police-mtu-ttl-fail\n\
+      \  description MTU/TTL 0/TTL 1 failures\nclass-map match-any system-cpp-police-isis\n\
+      \  description IS-IS protocol\nclass-map match-any system-cpp-police-bfd-v4\n\
+      \  description BFD and BFD Echo over IPv4\nclass-map match-any system-cpp-police-udp-v4\n\
+      \  description UDP V4\nclass-map match-any system-cpp-police-mcast-rpf-fail\n\
+      \  description MCAST Data RPF fail\nclass-map match-any system-cpp-police-bfd-v6\n\
+      \  description BFD and BFD Echo over IPv6\nclass-map match-any system-cpp-police-udp-v6\n\
+      \  description UDP V6\nclass-map match-any non-client-nrt-class\nclass-map match-any\
+      \ system-cpp-police-tcp-v6\n  description TCP V6\nclass-map match-any system-cpp-police-tcp-v4\n\
+      \  description TCP V4\nclass-map match-any system-cpp-default-v6\n  description\
+      \ Inter FED Traffic\nclass-map match-any system-cpp-police-routing-control\n\
+      \  description Routing control and Low Latency\nclass-map match-any system-cpp-police-protocol-snooping\n\
+      \  description Protocol snooping\nclass-map match-any system-cpp-default-v4\n\
+      \  description Inter FED Traffic\nclass-map match-any system-cpp-police-dhcp-snooping\n\
+      \  description DHCP snooping\nclass-map match-any system-cpp-police-svl-ipc\n\
+      \  description NGSVL IPC Traffic\nclass-map match-any system-cpp-police-system-critical\n\
+      \  description System Critical and Gold Pkt\nclass-map match-any system-cpp-police-mcast-ctrl-v4\n\
+      \  description MCAST control packets over IPv4\nclass-map match-any system-cpp-police-mcast-register-v4\n\
+      \  description MCAST v4 Register traffic\nclass-map match-any system-cpp-police-lisp-ctrl\n\
+      \  description LISP Control Packets\nclass-map match-any system-cpp-police-mcast-ctrl-v6\n\
+      \  description MCAST control packets over IPv6\nclass-map match-any system-cpp-police-mcast-register-v6\n\
+      \  description MCAST v6 Register traffic\n!\npolicy-map system-cpp-policy\n\
+      !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address 10.0.0.79\
+      \ 255.255.255.255\n!\ninterface Port-channel1\n no switchport\n ip address 10.0.0.42\
+      \ 255.255.255.252\n ip ospf network point-to-point\n!\ninterface GigabitEthernet0/0\n\
+      \ vrf forwarding Mgmt-vrf\n ip address dhcp\n negotiation auto\n!\ninterface\
+      \ GigabitEthernet1/0/1\n no switchport\n ip address 10.0.0.38 255.255.255.252\n\
+      \ ip ospf network point-to-point\n!\ninterface GigabitEthernet1/0/2\n no switchport\n\
+      \ ip address 10.0.0.26 255.255.255.252\n ip ospf network point-to-point\n!\n\
+      interface GigabitEthernet1/0/3\n no switchport\n no ip address\n channel-group\
+      \ 1 mode desirable\n!\ninterface GigabitEthernet1/0/4\n no switchport\n no ip\
+      \ address\n channel-group 1 mode desirable\n!\ninterface GigabitEthernet1/0/5\n\
+      \ no switchport\n ip address 10.0.0.65 255.255.255.252\n ip ospf network point-to-point\n\
+      !\ninterface GigabitEthernet1/0/6\n no switchport\n ip address 10.0.0.61 255.255.255.252\n\
+      \ ip ospf network point-to-point\n!\ninterface GigabitEthernet1/0/7\n!\ninterface\
+      \ GigabitEthernet1/0/8\n!\ninterface Vlan1\n no ip address\n!\nrouter ospf 1\n\
+      \ router-id 10.0.0.79\n passive-interface Loopback0\n network 10.0.0.26 0.0.0.0\
+      \ area 0\n network 10.0.0.38 0.0.0.0 area 0\n network 10.0.0.42 0.0.0.0 area\
+      \ 0\n network 10.0.0.61 0.0.0.0 area 0\n network 10.0.0.65 0.0.0.0 area 0\n\
+      \ network 10.0.0.79 0.0.0.0 area 0\n!\nip forward-protocol nd\nip tcp selective-ack\n\
+      ip tcp mss 1280\nip tcp window-size 212000\nip http server\nip http authentication\
+      \ local\nip http secure-server\nip ssh bulk-mode 131072\nip ssh server algorithm\
+      \ mac hmac-sha1 hmac-sha2-256 hmac-sha2-512\nip ssh server algorithm kex diffie-hellman-group14-sha1\n\
+      !\n!\n!\n!\n!\n!\ncontrol-plane\n service-policy input system-cpp-policy\n!\n\
+      !\nline con 0\n exec-timeout 0 0\n logging synchronous\n stopbits 1\nline vty\
+      \ 0 4\n login local\n transport input ssh\nline vty 5 15\n login local\n transport\
+      \ input ssh\n!\ncall-home\n ! If contact email address in call-home is configured\
+      \ as sch-smart-licensing@cisco.com\n ! the email address configured in Cisco\
+      \ Smart License Portal will be used as contact email address to send SCH notifications.\n\
+      \ contact-email-addr sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n\
+      \  active\n  destination transport-method http\n!\n!\n!\n!\n!\nend"
+    cpu_limit: 100
+    cpus: 4
+    data_volume: 0
+    hide_links: false
+    id: n12
+    label: C2
+    node_definition: catalyst9000v_dd
+    ram: 18432
+    tags: []
+    x: 930
+    y: 248
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet1/0/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet1/0/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet1/0/3
+        slot: 3
+        type: physical
+      - id: i5
+        label: GigabitEthernet1/0/4
+        slot: 4
+        type: physical
+      - id: i6
+        label: GigabitEthernet1/0/5
+        slot: 5
+        type: physical
+      - id: i7
+        label: GigabitEthernet1/0/6
+        slot: 6
+        type: physical
+      - id: i8
+        label: GigabitEthernet1/0/7
+        slot: 7
+        type: physical
+      - id: i9
+        label: GigabitEthernet1/0/8
+        slot: 8
+        type: physical
+  - boot_disk_size: 0
+    configuration: "Building configuration...\n\nCurrent configuration : 13744 bytes\n\
+      !\n! Last configuration change at 14:48:22 UTC Sat May 11 2024\n!\nversion 17.11\n\
+      service timestamps debug datetime msec\nservice timestamps log datetime msec\n\
+      service call-home\nplatform punt-keepalive disable-kernel-core\n!\nhostname\
+      \ D1\n!\n!\nvrf definition Mgmt-vrf\n !\n address-family ipv4\n exit-address-family\n\
+      \ !\n address-family ipv6\n exit-address-family\n!\nno logging console\nno aaa\
+      \ new-model\nswitch 1 provision c9kv-uadp-8p\n!\n!\n!\n!\nip routing\n!\nno\
+      \ ip domain lookup\nip domain name mdd.net\n!\n!\n!\nlogin on-success log\n\
+      !\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint SLA-TrustPoint\n enrollment pkcs12\n\
+      \ revocation-check crl\n!\ncrypto pki trustpoint TP-self-signed-816674771\n\
+      \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-816674771\n\
+      \ revocation-check none\n rsakeypair TP-self-signed-816674771\n!\n!\ncrypto\
+      \ pki certificate chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209\
+      \ A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355\
+      \ 040A1305 43697363 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73\
+      \ 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338\
+      \ 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030\
+      \ 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130\
+      \ 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100\
+      \ A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147\
+      \ C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239\
+      \ C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9\
+      \ 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD\
+      \ C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7\
+      \ 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62\
+      \ EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD\
+      \ 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1\
+      \ 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13\
+      \ 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17\
+      \ 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24\
+      \ D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B\
+      \ 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E\
+      \ 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700\
+      \ 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6\
+      \ 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F\
+      \ 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA\
+      \ EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049\
+      \ 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \t\
+      quit\ncrypto pki certificate chain TP-self-signed-816674771\n certificate self-signed\
+      \ 01\n  3082032E 30820216 A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n\
+      \  30312E30 2C060355 04031325 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+      \  69666963 6174652D 38313636 37343737 31301E17 0D323430 34313731 37313833\n\
+      \  315A170D 33343034 31373137 31383331 5A303031 2E302C06 03550403 1325494F\n\
+      \  532D5365 6C662D53 69676E65 642D4365 72746966 69636174 652D3831 36363734\n\
+      \  37373130 82012230 0D06092A 864886F7 0D010101 05000382 010F0030 82010A02\n\
+      \  82010100 9A3EB85B 9E6D42D2 6A1C70B7 D48AD62B 0EBD0AE9 5C2E0BC4 692478E5\n\
+      \  1B21ABD5 4766A672 AB278875 C0B58E17 56AA54CC 50B527F5 C53F818C CE0A515F\n\
+      \  F9E636D5 807762A4 3029918D 7B9E5A27 545C3F2D 7FD8031A 28407260 C4557355\n\
+      \  41262D25 936379CE BC810092 A2C1C6CF D474BDAB D0AFA407 929533CE 0D8BBEF2\n\
+      \  59E6B750 B5C0AE72 F28FE472 64B44720 56795EDF E73DE614 DBB3A40B 8B6E3148\n\
+      \  077ADE4E 1F2930AA 7401C036 AA574515 22B82FCA 3525EA08 7B439826 1E5D724C\n\
+      \  AA3B0323 FB6ED26D D5035C42 61018DBC 14A48DEC 3480D7AD BF04DE3A 166AB1BE\n\
+      \  E8406C92 CA5525AA ED847659 9423B089 28E30B9D 50F8E914 BCD26B6A C40BE331\n\
+      \  6D7EC277 02030100 01A35330 51300F06 03551D13 0101FF04 05300301 01FF301F\n\
+      \  0603551D 23041830 1680141A 78124858 E5149417 805D5083 CE380EDC 8DEDCA30\n\
+      \  1D060355 1D0E0416 04141A78 124858E5 14941780 5D5083CE 380EDC8D EDCA300D\n\
+      \  06092A86 4886F70D 01010505 00038201 0100999D C0C4006D 448C08C8 09E649DF\n\
+      \  F50B8E46 A8177983 6DC02826 670DC109 1C08BDBD E046EBC4 E60FFC20 D624BF7E\n\
+      \  FA94539A D3D0A2B5 4C28B1CF 812925CE A8EE8FB6 A5733883 AFFB3537 79E0CB60\n\
+      \  5C0CE47F FE83D252 4FFC08C9 B8A44492 7F93DCD2 5187F9FE 3E0E4F6F 01AA7D5C\n\
+      \  3A0D5BA9 47AAC80D 5D75156C 85084986 CC420F07 A776E2A9 5564B040 29139063\n\
+      \  D48BE8DE CB528A7B EEC8D5FF 4FDBD897 8C3FB401 1412CAA4 3329F8BA 4C2911D4\n\
+      \  631A626D 681223A2 0A10392D 609B103B 59325D3D 2015B54B 6DF1F0D6 72BC953C\n\
+      \  7D8716DC 2E760448 D72B6B4C E0FCF838 7BB7B18A 1A42F8B7 A35CD20F 33D17600\n\
+      \  2BB0BAE7 99A972A9 1BB969F6 C58DC042 E1EC\n  \tquit\n!\n!\nlicense boot level\
+      \ network-advantage\nmemory free low-watermark processor 180924\n!\ndiagnostic\
+      \ bootup level minimal\n!\nspanning-tree mode rapid-pvst\nspanning-tree extend\
+      \ system-id\nspanning-tree vlan 10,20 priority 0\nspanning-tree vlan 99 priority\
+      \ 4096\n!\n!\n!\n!\nusername admin privilege 15 secret 9 $9$HiT85Lx6PJbtIk$DrcdoZZHN4Z6NNY2y2INvkjTS3Ugs/Wc1PsLWrIu8tw\n\
+      username mdd privilege 15 secret 9 $9$4us6.l6pIKdfM.$5LlfLvTDkStLmP0uRXIpd0OqIpowbb6pomBGtjTv.Ws\n\
+      !\nredundancy\n mode sso\ncrypto engine compliance shield disable\n!\n!\n!\n\
+      !\nvlan dot1q tag native\n!\n!\nclass-map match-any system-cpp-police-mac-learning\n\
+      \  description MAC Learning\nclass-map match-any system-cpp-police-mcast-data\n\
+      \  description MCAST Data traffic\nclass-map match-any system-cpp-police-topology-control\n\
+      \  description Topology control\nclass-map match-any system-cpp-police-unknown-uc\n\
+      \  description Unknown UC Packets\nclass-map match-any system-cpp-police-sw-forward\n\
+      \  description Sw forwarding, L2 LVX data, LOGGING\nclass-map match-any system-cpp-police-proto-snoop-v6\n\
+      \  description Protocol snooping v6\nclass-map match-any system-cpp-default\n\
+      \  description EWLC control, EWLC data, Inter FED\nclass-map match-any system-cpp-police-proto-snoop-v4\n\
+      \  description Protocol snooping v4\nclass-map match-any system-cpp-police-rip-bc\n\
+      \  description RIP Broadcast\nclass-map match-any system-cpp-police-sys-data\n\
+      \  description Learning cache ovfl, High Rate App, Exception, EGR Exception,\
+      \ NFL SAMPLED DATA, RPF Failed\nclass-map match-any system-cpp-police-svl-ctrl\n\
+      \  description NGSVL IPC Traffic\nclass-map match-any system-cpp-police-mpls-oam\n\
+      \  description MPLS OAM (traceroute, ping etc)\nclass-map match-any system-cpp-police-punt-webauth\n\
+      \  description Punt Webauth\nclass-map match-any system-cpp-police-l2lvx-control\n\
+      \  description L2 LVX control packets\nclass-map match-any system-cpp-police-dhcp-v6\n\
+      \  description DHCP V6\nclass-map match-any system-cpp-police-dhcp-v4\n  description\
+      \ DHCP V4\nclass-map match-any system-cpp-police-forus\n  description Forus\
+      \ Address resolution and Forus traffic\nclass-map match-any system-cpp-police-icmp-v6\n\
+      \  description ICMP redirect, ICMP_GEN over IPv6\nclass-map match-any system-cpp-police-multicast-end-station\n\
+      \  description MCAST END STATION\nclass-map match-any system-cpp-police-icmp-v4\n\
+      \  description ICMP redirect, ICMP_GEN over IPv4\nclass-map match-any system-cpp-police-ospf-v6\n\
+      \  description OSPF over IPv6\nclass-map match-any system-cpp-police-ospf-v4\n\
+      \  description OSPF over IPv4\nclass-map match-any system-cpp-police-arp\n \
+      \ description Address Resolution Protocol\nclass-map match-any system-cpp-police-igrp-v4\n\
+      \  description IGRP and EIGRP over IPv4\nclass-map match-any system-cpp-police-fhrp-v4\n\
+      \  description VRRP, HSRP, GLBP over IPv4\nclass-map match-any system-cpp-police-igrp-v6\n\
+      \  description IGRP and EIGRP over IPv6\nclass-map match-any system-cpp-police-fhrp-v6\n\
+      \  description VRRP, HSRP, GLBP over IPv6\nclass-map match-any system-cpp-police-fragment-v4\n\
+      \  description IPv4 Fragmented Packets\nclass-map match-any system-cpp-police-fragment-v6\n\
+      \  description IPv6 Fragmented Packets\nclass-map match-any system-cpp-police-multicast\n\
+      \  description Transit Traffic and MCAST Data\nclass-map match-any system-cpp-police-ldp-v4\n\
+      \  description LDP (MPLS) over IPv4\nclass-map match-any system-cpp-police-ldp-v6\n\
+      \  description LDP (MPLS) over IPv6\nclass-map match-any system-cpp-police-l2-control\n\
+      \  description L2 control\nclass-map match-any system-cpp-police-dot1x-auth\n\
+      \  description DOT1X Auth\nclass-map match-any system-cpp-police-data\n  description\
+      \ ICMP redirect, ICMP_GEN and BROADCAST\nclass-map match-any system-cpp-police-lacp\n\
+      \  description LACP control traffic for ether channel\nclass-map match-any system-cpp-police-bgp-v4\n\
+      \  description BGP sessions over IPv4\nclass-map match-any system-cpp-police-stackwise-virt-control\n\
+      \  description Stackwise Virtual\nclass-map match-any system-cpp-police-bgp-v6\n\
+      \  description BGP sessions over IPv6\nclass-map match-any system-cpp-police-rip-v6\n\
+      \  description RIP over IPv6\nclass-map match-any system-cpp-police-alt-sw-forward\n\
+      \  description Alternate Software forwarding\nclass-map match-any system-cpp-police-rip-v4\n\
+      \  description RIP over IPv4\nclass-map match-any system-cpp-police-mtu-ttl-fail\n\
+      \  description MTU/TTL 0/TTL 1 failures\nclass-map match-any system-cpp-police-isis\n\
+      \  description IS-IS protocol\nclass-map match-any system-cpp-police-bfd-v4\n\
+      \  description BFD and BFD Echo over IPv4\nclass-map match-any system-cpp-police-udp-v4\n\
+      \  description UDP V4\nclass-map match-any system-cpp-police-mcast-rpf-fail\n\
+      \  description MCAST Data RPF fail\nclass-map match-any system-cpp-police-bfd-v6\n\
+      \  description BFD and BFD Echo over IPv6\nclass-map match-any system-cpp-police-udp-v6\n\
+      \  description UDP V6\nclass-map match-any non-client-nrt-class\nclass-map match-any\
+      \ system-cpp-police-tcp-v6\n  description TCP V6\nclass-map match-any system-cpp-police-tcp-v4\n\
+      \  description TCP V4\nclass-map match-any system-cpp-default-v6\n  description\
+      \ Inter FED Traffic\nclass-map match-any system-cpp-police-routing-control\n\
+      \  description Routing control and Low Latency\nclass-map match-any system-cpp-police-protocol-snooping\n\
+      \  description Protocol snooping\nclass-map match-any system-cpp-default-v4\n\
+      \  description Inter FED Traffic\nclass-map match-any system-cpp-police-dhcp-snooping\n\
+      \  description DHCP snooping\nclass-map match-any system-cpp-police-svl-ipc\n\
+      \  description NGSVL IPC Traffic\nclass-map match-any system-cpp-police-system-critical\n\
+      \  description System Critical and Gold Pkt\nclass-map match-any system-cpp-police-mcast-ctrl-v4\n\
+      \  description MCAST control packets over IPv4\nclass-map match-any system-cpp-police-mcast-register-v4\n\
+      \  description MCAST v4 Register traffic\nclass-map match-any system-cpp-police-lisp-ctrl\n\
+      \  description LISP Control Packets\nclass-map match-any system-cpp-police-mcast-ctrl-v6\n\
+      \  description MCAST control packets over IPv6\nclass-map match-any system-cpp-police-mcast-register-v6\n\
+      \  description MCAST v6 Register traffic\n!\npolicy-map system-cpp-policy\n\
+      !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address 10.0.0.80\
+      \ 255.255.255.255\n!\ninterface Port-channel1\n switchport trunk native vlan\
+      \ 1000\n switchport trunk allowed vlan 10,20,99\n switchport mode trunk\n switchport\
+      \ nonegotiate\n!\ninterface GigabitEthernet0/0\n vrf forwarding Mgmt-vrf\n ip\
+      \ address dhcp\n negotiation auto\n!\ninterface GigabitEthernet1/0/1\n switchport\
+      \ trunk native vlan 1000\n switchport trunk allowed vlan 10,20,99\n switchport\
+      \ mode trunk\n switchport nonegotiate\n!\ninterface GigabitEthernet1/0/2\n!\n\
+      interface GigabitEthernet1/0/3\n switchport trunk native vlan 1000\n switchport\
+      \ trunk allowed vlan 10,20,99\n switchport mode trunk\n switchport nonegotiate\n\
+      \ channel-group 1 mode desirable\n!\ninterface GigabitEthernet1/0/4\n switchport\
+      \ trunk native vlan 1000\n switchport trunk allowed vlan 10,20,99\n switchport\
+      \ mode trunk\n switchport nonegotiate\n channel-group 1 mode desirable\n!\n\
+      interface GigabitEthernet1/0/5\n no switchport\n ip address 10.0.0.46 255.255.255.252\n\
+      \ ip ospf network point-to-point\n!\ninterface GigabitEthernet1/0/6\n no switchport\n\
+      \ ip address 10.0.0.62 255.255.255.252\n ip ospf network point-to-point\n!\n\
+      interface GigabitEthernet1/0/7\n switchport trunk native vlan 1000\n switchport\
+      \ trunk allowed vlan 10,20,99\n switchport mode trunk\n switchport nonegotiate\n\
+      !\ninterface GigabitEthernet1/0/8\n switchport trunk native vlan 1000\n switchport\
+      \ trunk allowed vlan 10,20,99\n switchport mode trunk\n switchport nonegotiate\n\
+      !\ninterface Vlan1\n no ip address\n!\ninterface Vlan10\n ip address 10.1.0.2\
+      \ 255.255.255.0\n standby 1 ip 10.1.0.1\n standby 1 priority 105\n standby 1\
+      \ preempt\n!\ninterface Vlan20\n ip address 10.2.0.2 255.255.255.0\n standby\
+      \ 2 ip 10.2.0.1\n standby 2 priority 105\n standby 2 preempt\n!\ninterface Vlan99\n\
+      \ ip address 10.0.0.2 255.255.255.240\n standby 3 ip 10.0.0.1\n!\nrouter ospf\
+      \ 1\n router-id 10.0.0.80\n passive-interface Vlan10\n passive-interface Vlan20\n\
+      \ passive-interface Loopback0\n network 10.0.0.2 0.0.0.0 area 0\n network 10.0.0.46\
+      \ 0.0.0.0 area 0\n network 10.0.0.62 0.0.0.0 area 0\n network 10.0.0.80 0.0.0.0\
+      \ area 0\n network 10.1.0.2 0.0.0.0 area 0\n network 10.2.0.2 0.0.0.0 area 0\n\
+      !\nip forward-protocol nd\nip tcp selective-ack\nip tcp mss 1280\nip tcp window-size\
+      \ 212000\nip http server\nip http authentication local\nip http secure-server\n\
+      ip ssh bulk-mode 131072\nip ssh server algorithm mac hmac-sha1 hmac-sha2-256\
+      \ hmac-sha2-512\nip ssh server algorithm kex diffie-hellman-group14-sha1\n!\n\
+      !\n!\n!\n!\n!\ncontrol-plane\n service-policy input system-cpp-policy\n!\n!\n\
+      line con 0\n exec-timeout 0 0\n logging synchronous\n stopbits 1\nline vty 0\
+      \ 4\n login local\n transport input ssh\nline vty 5 15\n login local\n transport\
+      \ input ssh\n!\ncall-home\n ! If contact email address in call-home is configured\
+      \ as sch-smart-licensing@cisco.com\n ! the email address configured in Cisco\
+      \ Smart License Portal will be used as contact email address to send SCH notifications.\n\
+      \ contact-email-addr sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n\
+      \  active\n  destination transport-method http\n!\n!\n!\n!\n!\nend"
+    cpu_limit: 100
+    cpus: 4
+    data_volume: 0
+    hide_links: false
+    id: n13
+    label: D1
+    node_definition: catalyst9000v_dd
+    ram: 18432
+    tags: []
+    x: 724
+    y: 423
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet1/0/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet1/0/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet1/0/3
+        slot: 3
+        type: physical
+      - id: i5
+        label: GigabitEthernet1/0/4
+        slot: 4
+        type: physical
+      - id: i6
+        label: GigabitEthernet1/0/5
+        slot: 5
+        type: physical
+      - id: i7
+        label: GigabitEthernet1/0/6
+        slot: 6
+        type: physical
+      - id: i8
+        label: GigabitEthernet1/0/7
+        slot: 7
+        type: physical
+      - id: i9
+        label: GigabitEthernet1/0/8
+        slot: 8
+        type: physical
+  - boot_disk_size: 0
+    configuration: "Building configuration...\n\nCurrent configuration : 13681 bytes\n\
+      !\n! Last configuration change at 14:48:25 UTC Sat May 11 2024\n!\nversion 17.11\n\
+      service timestamps debug datetime msec\nservice timestamps log datetime msec\n\
+      service call-home\nplatform punt-keepalive disable-kernel-core\n!\nhostname\
+      \ D2\n!\n!\nvrf definition Mgmt-vrf\n !\n address-family ipv4\n exit-address-family\n\
+      \ !\n address-family ipv6\n exit-address-family\n!\nno logging console\nno aaa\
+      \ new-model\nswitch 1 provision c9kv-uadp-8p\n!\n!\n!\n!\nip routing\n!\nip\
+      \ domain name mdd.net\n!\n!\n!\nlogin on-success log\n!\n!\n!\n!\n!\n!\n!\n\
+      !\ncrypto pki trustpoint SLA-TrustPoint\n enrollment pkcs12\n revocation-check\
+      \ crl\n!\ncrypto pki trustpoint TP-self-signed-816674771\n enrollment selfsigned\n\
+      \ subject-name cn=IOS-Self-Signed-Certificate-816674771\n revocation-check none\n\
+      \ rsakeypair TP-self-signed-816674771\n!\n!\ncrypto pki certificate chain SLA-TrustPoint\n\
+      \ certificate ca 01\n  30820321 30820209 A0030201 02020101 300D0609 2A864886\
+      \ F70D0101 0B050030\n  32310E30 0C060355 040A1305 43697363 6F312030 1E060355\
+      \ 04031317 43697363\n  6F204C69 63656E73 696E6720 526F6F74 20434130 1E170D31\
+      \ 33303533 30313934\n  3834375A 170D3338 30353330 31393438 34375A30 32310E30\
+      \ 0C060355 040A1305\n  43697363 6F312030 1E060355 04031317 43697363 6F204C69\
+      \ 63656E73 696E6720\n  526F6F74 20434130 82012230 0D06092A 864886F7 0D010101\
+      \ 05000382 010F0030\n  82010A02 82010100 A6BCBD96 131E05F7 145EA72C 2CD686E6\
+      \ 17222EA1 F1EFF64D\n  CBB4C798 212AA147 C655D8D7 9471380D 8711441E 1AAF071A\
+      \ 9CAE6388 8A38E520\n  1C394D78 462EF239 C659F715 B98C0A59 5BBB5CBD 0CFEBEA3\
+      \ 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96 6FA68957 A2617DE7\
+      \ 104FDC5F EA2956AC\n  7390A3EB 2B5436AD C847A2C5 DAB553EB 69A9A535 58E9F3E3\
+      \ C0BD23CF 58BD7188\n  68E69491 20F320E7 948E71D7 AE3BCC84 F10684C7 4BC8E00F\
+      \ 539BA42B 42C68BB7\n  C7479096 B4CB2D62 EA2F505D C7B062A4 6811D95B E8250FC4\
+      \ 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD 3D992327 A8BB03BD 4E6D7069 7CBADF8B\
+      \ DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1 02030100 01A34230 40300E06 03551D0F\
+      \ 0101FF04 04030201\n  06300F06 03551D13 0101FF04 05300301 01FF301D 0603551D\
+      \ 0E041604 1449DC85\n  4B3D31E5 1B3E6A17 606AF333 3D3B4C73 E8300D06 092A8648\
+      \ 86F70D01 010B0500\n  03820101 00507F24 D3932A66 86025D9F E838AE5C 6D4DF6B0\
+      \ 49631C78 240DA905\n  604EDCDE FF4FED2B 77FC460E CD636FDB DD44681E 3A5673AB\
+      \ 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E 1AECA0C2 2189BB5C 8FA85686 CD98B646\
+      \ 5575B146 8DFC66A8\n  467A3DF4 4D565700 6ADF0F0D CF835015 3C04FF7C 21E878AC\
+      \ 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB E973DE7F 5BDDEB86\
+      \ C71E3B49 1765308B\n  5FB0DA06 B92AFE7F 494E8A9E 07B85737 F3A58BE1 1A48A229\
+      \ C37C1E69 39F08678\n  80DDCD16 D6BACECA EEBC7CF9 8428787B 35202CDC 60E4616A\
+      \ B623CDBD 230E3AFB\n  418616A9 4093E049 4D10AB75 27E86F73 932E35B5 8862FDAE\
+      \ 0275156F 719BB2F0\n  D697DF7F 28\n  \tquit\ncrypto pki certificate chain TP-self-signed-816674771\n\
+      \ certificate self-signed 01\n  3082032E 30820216 A0030201 02020101 300D0609\
+      \ 2A864886 F70D0101 05050030\n  30312E30 2C060355 04031325 494F532D 53656C66\
+      \ 2D536967 6E65642D 43657274\n  69666963 6174652D 38313636 37343737 31301E17\
+      \ 0D323430 34313731 37313831\n  345A170D 33343034 31373137 31383134 5A303031\
+      \ 2E302C06 03550403 1325494F\n  532D5365 6C662D53 69676E65 642D4365 72746966\
+      \ 69636174 652D3831 36363734\n  37373130 82012230 0D06092A 864886F7 0D010101\
+      \ 05000382 010F0030 82010A02\n  82010100 F15005E6 F697482B 303DDAD7 CFFEF538\
+      \ DB5AA1E0 65ECA338 A70BDFCD\n  65CEF861 82874014 2EAFEBB6 628F19CF 8AE003E2\
+      \ 972AFD12 27EF2D3B D3291BF0\n  60830797 C9AAF45E 067D1676 7C9A52F5 14E38112\
+      \ F652EF47 D411187F 9CF6E054\n  79EFF733 5B4A8E15 2A0CD8A6 9917A107 F5F70604\
+      \ FD3F6399 B07A584A D73C1AB7\n  683CF005 DEA20233 99136D92 D2A74019 742492EA\
+      \ D19EBD50 BB28DDAB 6B658085\n  6E313CDE 9916421C 99203E3A DA5A06D9 F617288F\
+      \ 7ABB60DB 3E63D019 E9CCB78A\n  5D945129 CFD65E9C E1BA6C91 2A2FB1BC 4B793A1D\
+      \ 4F212111 9DD14BE7 F2C8F6CA\n  216A7177 3E926C6D 4E657A76 8E5497A7 EC0C6E1E\
+      \ 7D44E8E7 C8AC30B1 C264BD66\n  BEE1319D 02030100 01A35330 51300F06 03551D13\
+      \ 0101FF04 05300301 01FF301F\n  0603551D 23041830 168014CA B0DF02DB 7D985591\
+      \ A3408139 B7BDB475 265D1A30\n  1D060355 1D0E0416 0414CAB0 DF02DB7D 985591A3\
+      \ 408139B7 BDB47526 5D1A300D\n  06092A86 4886F70D 01010505 00038201 01005107\
+      \ 9322DAFB 8980FC9E 5641CEBE\n  B3789BB6 E6A80BE5 A392A9EB FC4E2D6C D032375A\
+      \ 441966F5 8FAB7EDA 5AD051E6\n  EB951216 8697AC7C E38520E6 71636D4B A0159F5E\
+      \ 16466031 D11DE1F1 6B24C13A\n  F5730752 44C634D9 F247CD70 6AD9C184 E44690A4\
+      \ ACDB115F DBD34047 22DAE465\n  03639228 BCA60ECD D5904AF8 1AD4CBBE FD6F1BFC\
+      \ 7B847857 965EB4C8 6088EDC9\n  722E1809 746F1CCF 2E433D33 FFB45095 E3BCBDED\
+      \ EA3FD194 71B05296 E907DFBB\n  D5176097 86833D16 82C830C9 52CBE5DB F1C31386\
+      \ 6469C61B 4D9F6420 5F221751\n  0515A85E 2E501B1B 5452CD96 F0AC70A8 F7117C7F\
+      \ 1ED2EB6B 55A5C97F EBC39DC6\n  D9F19C69 86720C36 1164198C 1B0116DC E7E2\n \
+      \ \tquit\n!\n!\nlicense boot level network-advantage\nmemory free low-watermark\
+      \ processor 180924\n!\ndiagnostic bootup level minimal\n!\nspanning-tree mode\
+      \ rapid-pvst\nspanning-tree extend system-id\nspanning-tree vlan 10,20 priority\
+      \ 4096\nspanning-tree vlan 99 priority 0\n!\n!\n!\n!\nusername admin privilege\
+      \ 15 secret 9 $9$R0XRMOSHSo68v.$VMFvnyrTpIGkeiML1rwqIa9mP41Pf30LB53BiUgDXiM\n\
+      username mdd privilege 15 secret 9 $9$5/eUmc4.JIyoZU$wn/fxuqfNEL0zOx6quYHdBVPeWwnRM9DFreZrg1DR2c\n\
+      !\nredundancy\n mode sso\ncrypto engine compliance shield disable\n!\n!\n!\n\
+      !\nvlan dot1q tag native\n!\n!\nclass-map match-any system-cpp-police-mac-learning\n\
+      \  description MAC Learning\nclass-map match-any system-cpp-police-mcast-data\n\
+      \  description MCAST Data traffic\nclass-map match-any system-cpp-police-topology-control\n\
+      \  description Topology control\nclass-map match-any system-cpp-police-unknown-uc\n\
+      \  description Unknown UC Packets\nclass-map match-any system-cpp-police-sw-forward\n\
+      \  description Sw forwarding, L2 LVX data, LOGGING\nclass-map match-any system-cpp-police-proto-snoop-v6\n\
+      \  description Protocol snooping v6\nclass-map match-any system-cpp-default\n\
+      \  description EWLC control, EWLC data, Inter FED\nclass-map match-any system-cpp-police-proto-snoop-v4\n\
+      \  description Protocol snooping v4\nclass-map match-any system-cpp-police-rip-bc\n\
+      \  description RIP Broadcast\nclass-map match-any system-cpp-police-sys-data\n\
+      \  description Learning cache ovfl, High Rate App, Exception, EGR Exception,\
+      \ NFL SAMPLED DATA, RPF Failed\nclass-map match-any system-cpp-police-svl-ctrl\n\
+      \  description NGSVL IPC Traffic\nclass-map match-any system-cpp-police-mpls-oam\n\
+      \  description MPLS OAM (traceroute, ping etc)\nclass-map match-any system-cpp-police-punt-webauth\n\
+      \  description Punt Webauth\nclass-map match-any system-cpp-police-l2lvx-control\n\
+      \  description L2 LVX control packets\nclass-map match-any system-cpp-police-dhcp-v6\n\
+      \  description DHCP V6\nclass-map match-any system-cpp-police-dhcp-v4\n  description\
+      \ DHCP V4\nclass-map match-any system-cpp-police-forus\n  description Forus\
+      \ Address resolution and Forus traffic\nclass-map match-any system-cpp-police-icmp-v6\n\
+      \  description ICMP redirect, ICMP_GEN over IPv6\nclass-map match-any system-cpp-police-multicast-end-station\n\
+      \  description MCAST END STATION\nclass-map match-any system-cpp-police-icmp-v4\n\
+      \  description ICMP redirect, ICMP_GEN over IPv4\nclass-map match-any system-cpp-police-ospf-v6\n\
+      \  description OSPF over IPv6\nclass-map match-any system-cpp-police-ospf-v4\n\
+      \  description OSPF over IPv4\nclass-map match-any system-cpp-police-arp\n \
+      \ description Address Resolution Protocol\nclass-map match-any system-cpp-police-igrp-v4\n\
+      \  description IGRP and EIGRP over IPv4\nclass-map match-any system-cpp-police-fhrp-v4\n\
+      \  description VRRP, HSRP, GLBP over IPv4\nclass-map match-any system-cpp-police-igrp-v6\n\
+      \  description IGRP and EIGRP over IPv6\nclass-map match-any system-cpp-police-fhrp-v6\n\
+      \  description VRRP, HSRP, GLBP over IPv6\nclass-map match-any system-cpp-police-fragment-v4\n\
+      \  description IPv4 Fragmented Packets\nclass-map match-any system-cpp-police-fragment-v6\n\
+      \  description IPv6 Fragmented Packets\nclass-map match-any system-cpp-police-multicast\n\
+      \  description Transit Traffic and MCAST Data\nclass-map match-any system-cpp-police-ldp-v4\n\
+      \  description LDP (MPLS) over IPv4\nclass-map match-any system-cpp-police-ldp-v6\n\
+      \  description LDP (MPLS) over IPv6\nclass-map match-any system-cpp-police-l2-control\n\
+      \  description L2 control\nclass-map match-any system-cpp-police-dot1x-auth\n\
+      \  description DOT1X Auth\nclass-map match-any system-cpp-police-data\n  description\
+      \ ICMP redirect, ICMP_GEN and BROADCAST\nclass-map match-any system-cpp-police-lacp\n\
+      \  description LACP control traffic for ether channel\nclass-map match-any system-cpp-police-bgp-v4\n\
+      \  description BGP sessions over IPv4\nclass-map match-any system-cpp-police-stackwise-virt-control\n\
+      \  description Stackwise Virtual\nclass-map match-any system-cpp-police-bgp-v6\n\
+      \  description BGP sessions over IPv6\nclass-map match-any system-cpp-police-rip-v6\n\
+      \  description RIP over IPv6\nclass-map match-any system-cpp-police-alt-sw-forward\n\
+      \  description Alternate Software forwarding\nclass-map match-any system-cpp-police-rip-v4\n\
+      \  description RIP over IPv4\nclass-map match-any system-cpp-police-mtu-ttl-fail\n\
+      \  description MTU/TTL 0/TTL 1 failures\nclass-map match-any system-cpp-police-isis\n\
+      \  description IS-IS protocol\nclass-map match-any system-cpp-police-bfd-v4\n\
+      \  description BFD and BFD Echo over IPv4\nclass-map match-any system-cpp-police-udp-v4\n\
+      \  description UDP V4\nclass-map match-any system-cpp-police-mcast-rpf-fail\n\
+      \  description MCAST Data RPF fail\nclass-map match-any system-cpp-police-bfd-v6\n\
+      \  description BFD and BFD Echo over IPv6\nclass-map match-any system-cpp-police-udp-v6\n\
+      \  description UDP V6\nclass-map match-any non-client-nrt-class\nclass-map match-any\
+      \ system-cpp-police-tcp-v6\n  description TCP V6\nclass-map match-any system-cpp-police-tcp-v4\n\
+      \  description TCP V4\nclass-map match-any system-cpp-default-v6\n  description\
+      \ Inter FED Traffic\nclass-map match-any system-cpp-police-routing-control\n\
+      \  description Routing control and Low Latency\nclass-map match-any system-cpp-police-protocol-snooping\n\
+      \  description Protocol snooping\nclass-map match-any system-cpp-default-v4\n\
+      \  description Inter FED Traffic\nclass-map match-any system-cpp-police-dhcp-snooping\n\
+      \  description DHCP snooping\nclass-map match-any system-cpp-police-svl-ipc\n\
+      \  description NGSVL IPC Traffic\nclass-map match-any system-cpp-police-system-critical\n\
+      \  description System Critical and Gold Pkt\nclass-map match-any system-cpp-police-mcast-ctrl-v4\n\
+      \  description MCAST control packets over IPv4\nclass-map match-any system-cpp-police-mcast-register-v4\n\
+      \  description MCAST v4 Register traffic\nclass-map match-any system-cpp-police-lisp-ctrl\n\
+      \  description LISP Control Packets\nclass-map match-any system-cpp-police-mcast-ctrl-v6\n\
+      \  description MCAST control packets over IPv6\nclass-map match-any system-cpp-police-mcast-register-v6\n\
+      \  description MCAST v6 Register traffic\n!\npolicy-map system-cpp-policy\n\
+      !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address 10.0.0.81\
+      \ 255.255.255.255\n!\ninterface Port-channel1\n switchport trunk native vlan\
+      \ 1000\n switchport trunk allowed vlan 10,20,99\n switchport mode trunk\n switchport\
+      \ nonegotiate\n!\ninterface GigabitEthernet0/0\n vrf forwarding Mgmt-vrf\n ip\
+      \ address dhcp\n negotiation auto\n!\ninterface GigabitEthernet1/0/1\n switchport\
+      \ trunk native vlan 1000\n switchport trunk allowed vlan 10,20,99\n switchport\
+      \ mode trunk\n switchport nonegotiate\n!\ninterface GigabitEthernet1/0/2\n!\n\
+      interface GigabitEthernet1/0/3\n switchport trunk native vlan 1000\n switchport\
+      \ trunk allowed vlan 10,20,99\n switchport mode trunk\n switchport nonegotiate\n\
+      \ channel-group 1 mode desirable\n!\ninterface GigabitEthernet1/0/4\n switchport\
+      \ trunk native vlan 1000\n switchport trunk allowed vlan 10,20,99\n switchport\
+      \ mode trunk\n switchport nonegotiate\n channel-group 1 mode desirable\n!\n\
+      interface GigabitEthernet1/0/5\n no switchport\n ip address 10.0.0.66 255.255.255.252\n\
+      \ ip ospf network point-to-point\n!\ninterface GigabitEthernet1/0/6\n no switchport\n\
+      \ ip address 10.0.0.50 255.255.255.252\n ip ospf network point-to-point\n!\n\
+      interface GigabitEthernet1/0/7\n switchport trunk native vlan 1000\n switchport\
+      \ trunk allowed vlan 10,20,99\n switchport mode trunk\n switchport nonegotiate\n\
+      !\ninterface GigabitEthernet1/0/8\n switchport trunk native vlan 1000\n switchport\
+      \ trunk allowed vlan 10,20,99\n switchport mode trunk\n switchport nonegotiate\n\
+      !\ninterface Vlan1\n no ip address\n!\ninterface Vlan10\n ip address 10.1.0.3\
+      \ 255.255.255.0\n standby 1 ip 10.1.0.1\n!\ninterface Vlan20\n ip address 10.2.0.3\
+      \ 255.255.255.0\n standby 2 ip 10.2.0.1\n!\ninterface Vlan99\n ip address 10.0.0.3\
+      \ 255.255.255.240\n standby 3 ip 10.0.0.1\n standby 3 priority 105\n standby\
+      \ 3 preempt\n!\nrouter ospf 1\n router-id 10.0.0.81\n passive-interface Vlan10\n\
+      \ passive-interface Vlan20\n passive-interface Loopback0\n network 10.0.0.3\
+      \ 0.0.0.0 area 0\n network 10.0.0.50 0.0.0.0 area 0\n network 10.0.0.66 0.0.0.0\
+      \ area 0\n network 10.0.0.81 0.0.0.0 area 0\n network 10.1.0.3 0.0.0.0 area\
+      \ 0\n network 10.2.0.3 0.0.0.0 area 0\n!\nip forward-protocol nd\nip tcp selective-ack\n\
+      ip tcp mss 1280\nip tcp window-size 212000\nip http server\nip http authentication\
+      \ local\nip http secure-server\nip ssh bulk-mode 131072\nip ssh server algorithm\
+      \ mac hmac-sha1 hmac-sha2-256 hmac-sha2-512\nip ssh server algorithm kex diffie-hellman-group14-sha1\n\
+      !\n!\n!\n!\n!\n!\ncontrol-plane\n service-policy input system-cpp-policy\n!\n\
+      !\nline con 0\n exec-timeout 0 0\n logging synchronous\n stopbits 1\nline vty\
+      \ 0 4\n login local\n transport input ssh\nline vty 5 15\n login local\n transport\
+      \ input ssh\n!\ncall-home\n ! If contact email address in call-home is configured\
+      \ as sch-smart-licensing@cisco.com\n ! the email address configured in Cisco\
+      \ Smart License Portal will be used as contact email address to send SCH notifications.\n\
+      \ contact-email-addr sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n\
+      \  active\n  destination transport-method http\n!\n!\n!\n!\n!\nend"
+    cpu_limit: 100
+    cpus: 4
+    data_volume: 0
+    hide_links: false
+    id: n14
+    label: D2
+    node_definition: catalyst9000v_dd
+    ram: 18432
+    tags: []
+    x: 921
+    y: 419
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet1/0/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet1/0/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet1/0/3
+        slot: 3
+        type: physical
+      - id: i5
+        label: GigabitEthernet1/0/4
+        slot: 4
+        type: physical
+      - id: i6
+        label: GigabitEthernet1/0/5
+        slot: 5
+        type: physical
+      - id: i7
+        label: GigabitEthernet1/0/6
+        slot: 6
+        type: physical
+      - id: i8
+        label: GigabitEthernet1/0/7
+        slot: 7
+        type: physical
+      - id: i9
+        label: GigabitEthernet1/0/8
+        slot: 8
+        type: physical
+  - boot_disk_size: 0
+    configuration: |2-
+
+      !Command: show running-config
+      !Running configuration last done at: Sat May 11 14:42:23 2024
+      !Time: Sat May 11 14:42:24 2024
+
+      version 9.3(8) Bios:version
+      hostname L1
+      vdc L1 id 1
+        limit-resource vlan minimum 16 maximum 4094
+        limit-resource vrf minimum 2 maximum 4096
+        limit-resource port-channel minimum 0 maximum 511
+        limit-resource u4route-mem minimum 248 maximum 248
+        limit-resource u6route-mem minimum 96 maximum 96
+        limit-resource m4route-mem minimum 58 maximum 58
+        limit-resource m6route-mem minimum 8 maximum 8
+
+      feature ospf
+
+      no password strength-check
+      username admin password 5 $5$DDMPLM$SAgJhUZRJq25G6pT95iMPCvSSTM5KdFxzq31yWbgMe7  role network-admin
+      username cisco password 5 $5$AENCNP$wJjZU9tTkEoT0UGL/7phTSa0uNr7NbSBQeBh6Tb61P/  role network-admin
+      username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
+      username mdd password 5 $5$OLJPCB$Gf10zvYuQQQYHvNJqSDVWXepTvNn5iY5kul9qylN.a5  role network-admin
+      username mdd passphrase  lifetime 99999 warntime 14 gracetime 3
+      ip domain-lookup
+      ip domain-name mdd.net
+      copp profile strict
+      snmp-server user mdd network-admin auth md5 204E1FAB032AE0A10AA3100B8DA93791DB94 priv 054B6FD24D26CEF605BF585795A435B9DA9E localizedV2key
+      snmp-server user admin network-admin auth md5 530548E1BE002D34E7E7E6EB16A7ADEBF731 priv 322877D0B764262AAAF2F9D8CF776825E078 localizedV2key
+      snmp-server user cisco network-admin auth md5 323D20DF9B40234ED7CEC2CEDF736028B20B priv 17790385D1500B3ABDAA939ADB696775B02C localizedV2key
+      rmon event 1 log trap public description FATAL(1) owner PMON@FATAL
+      rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL
+      rmon event 3 log trap public description ERROR(3) owner PMON@ERROR
+      rmon event 4 log trap public description WARNING(4) owner PMON@WARNING
+      rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO
+
+      vlan 1
+
+      vrf context management
+
+      interface Ethernet1/1
+        no switchport
+        ip address 20.0.0.53/30
+        ip ospf network point-to-point
+        ip router ospf 1 area 0.0.0.1
+        no shutdown
+
+      interface Ethernet1/2
+        no switchport
+        ip address 20.0.0.61/30
+        ip ospf network point-to-point
+        ip router ospf 1 area 0.0.0.1
+        no shutdown
+
+      interface Ethernet1/3
+
+      interface Ethernet1/4
+
+      interface Ethernet1/5
+
+      interface Ethernet1/6
+
+      interface Ethernet1/7
+
+      interface Ethernet1/8
+
+      interface Ethernet1/9
+
+      interface Ethernet1/10
+
+      interface Ethernet1/11
+
+      interface Ethernet1/12
+
+      interface Ethernet1/13
+
+      interface Ethernet1/14
+
+      interface Ethernet1/15
+
+      interface Ethernet1/16
+
+      interface Ethernet1/17
+
+      interface Ethernet1/18
+
+      interface Ethernet1/19
+
+      interface Ethernet1/20
+
+      interface Ethernet1/21
+
+      interface Ethernet1/22
+
+      interface Ethernet1/23
+
+      interface Ethernet1/24
+
+      interface Ethernet1/25
+
+      interface Ethernet1/26
+
+      interface Ethernet1/27
+
+      interface Ethernet1/28
+
+      interface Ethernet1/29
+
+      interface Ethernet1/30
+
+      interface Ethernet1/31
+
+      interface Ethernet1/32
+
+      interface Ethernet1/33
+
+      interface Ethernet1/34
+
+      interface Ethernet1/35
+
+      interface Ethernet1/36
+
+      interface Ethernet1/37
+
+      interface Ethernet1/38
+
+      interface Ethernet1/39
+
+      interface Ethernet1/40
+
+      interface Ethernet1/41
+
+      interface Ethernet1/42
+
+      interface Ethernet1/43
+
+      interface Ethernet1/44
+
+      interface Ethernet1/45
+
+      interface Ethernet1/46
+
+      interface Ethernet1/47
+
+      interface Ethernet1/48
+
+      interface Ethernet1/49
+
+      interface Ethernet1/50
+
+      interface Ethernet1/51
+
+      interface Ethernet1/52
+
+      interface Ethernet1/53
+
+      interface Ethernet1/54
+
+      interface Ethernet1/55
+
+      interface Ethernet1/56
+
+      interface Ethernet1/57
+
+      interface Ethernet1/58
+
+      interface Ethernet1/59
+
+      interface Ethernet1/60
+
+      interface Ethernet1/61
+
+      interface Ethernet1/62
+
+      interface Ethernet1/63
+
+      interface Ethernet1/64
+
+      interface mgmt0
+        vrf member management
+
+      interface loopback0
+        ip address 20.0.0.3/32
+        ip router ospf 1 area 0.0.0.1
+      icam monitor scale
+
+      line console
+        exec-timeout 0
+      line vty
+        exec-timeout 0
+      boot nxos bootflash:/nxos.9.3.8.bin sup-1
+      router ospf 1
+        router-id 20.0.0.3
+
+      no logging console
+    cpu_limit: 100
+    cpus: 2
+    data_volume: 0
+    hide_links: false
+    id: n15
+    label: L1
+    node_definition: nxosv9000
+    ram: 8192
+    tags: []
+    x: 744
+    y: -559
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: mgmt0
+        slot: 0
+        type: physical
+      - id: i2
+        label: Ethernet1/1
+        slot: 1
+        type: physical
+      - id: i3
+        label: Ethernet1/2
+        slot: 2
+        type: physical
+      - id: i4
+        label: Ethernet1/3
+        slot: 3
+        type: physical
+  - boot_disk_size: 64
+    configuration: |-
+      #cloud-config
+      hostname: inserthostname_here
+      manage_etc_hosts: True
+      system_info:
+        default_user:
+          name: cisco
+      password: cisco
+      chpasswd: { expire: False }
+      ssh_pwauth: True
+      ssh_authorized_keys:
+         - your-ssh-pubkey-line-goes-here
+      network:
+        version: 2
+        ethernets:
+          ens2:
+            dhcp4: true
+      bootcmd:
+        - cloud-init-per always ip-ad sudo ip address add 10.2.0.4/24 dev ens3
+        - cloud-init-per always link-set sudo ip link set dev ens3 up
+        - cloud-init-per always ip-route-add sudo ip route add 10.0.0.0/8 via 10.2.0.1
+        - cloud-init-per always ip-route-add sudo ip route add 20.0.0.0/8 via 10.2.0.1
+    cpu_limit: 100
+    cpus: 1
+    data_volume: 0
+    hide_links: false
+    id: n16
+    label: ubuntu-0
+    node_definition: ubuntu
+    ram: 2048
+    tags: []
+    x: 1060
+    y: 765
+    interfaces:
+      - id: i0
+        label: ens2
+        slot: 0
+        type: physical
+      - id: i1
+        label: ens3
+        slot: 1
+        type: physical

@@ -47,9 +47,9 @@ ansible-galaxy collection install -r requirements.yml
 
 ```
 export CML_HOST=your.cml.server
-export CML_USERNAME=your_username
-export CML_PASSWORD=your_password
-export CML_LAB=your_lab_name
+export CML_USERNAME=your_user
+export CML_PASSWORD=your_pass
+export CML_LAB=your_lab
 export CML_VERIFY_CERT=false
 ```
 

@@ -15,17 +15,27 @@ all:
           vars:
             device_ned: cisco-nx-cli-5.23
           hosts:
-            n9kv1:
+            SW1:
               tags:
                 - switch
-            n9kv2:
+            SW2:
               tags:
                 - switch
+            CORE1:
+              tags:
+                - switch
+            R1:
+              tags:
+                - router
+              
     org:
       children:
         site1:
           # vars:
           #   site_name: site1
           hosts:
-            n9kv1:
-            n9kv2:
+            SW1:
+            SW2:
+            CORE1:
+            R1:
+            
