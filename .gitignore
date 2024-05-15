@@ -6,4 +6,4 @@ ansible_collections/
 .cache/
 config.yaml
 labs.yaml
-mdd-data/
+mdd-data/.DS_Store
