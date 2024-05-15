@@ -16,36 +16,47 @@ all:
             device_ned: cisco-nx-cli-5.23
           hosts:
             A1:
+              ansible_host: 10.0.0.4
               tags:
                 - switch
             A2:
+              ansible_host: 10.0.0.5
               tags:
                 - switch
             A3:
+              ansible_host: 10.0.0.6
               tags:
                 - switch   
             D1:
+              ansible_host: 10.0.0.2
               tags:
                 - switch                           
             D2:
+              ansible_host: 10.0.0.3
               tags:
                 - switch
             C1:
+              ansible_host: 10.0.0.78
               tags:
                 - switch
             C2:
+              ansible_host: 10.0.0.79
               tags:
                 - switch
             L1:
+              ansible_host: 20.0.0.3
               tags:
                 - switch
             L2:
+              ansible_host: 20.0.0.4
               tags:
                 - switch
             S1:
+              ansible_host: 20.0.0.1
               tags:
                 - switch
             S2:
+              ansible_host: 20.0.0.2
               tags:
                 - switch                
         routers:
@@ -53,12 +64,15 @@ all:
             device_ned: cisco-nx-cli-5.23
           hosts:
             R1:
+              ansible_host: 10.0.0.76
               tags:
                 - router
             R2:
+              ansible_host: 10.0.0.77
               tags:
                 - router
             DCR1:
+              ansible_host: 20.0.0.5
               tags:
                 - router
             
