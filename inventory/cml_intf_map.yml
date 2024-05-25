@@ -1,0 +1,110 @@
+all:
+  hosts:
+    A1:
+      cml_intf_xlate:
+        GigabitEthernet0/1: GigabitEthernet0/0
+        GigabitEthernet0/2: GigabitEthernet0/1
+        Loopback(\d+): Loopback\1
+        Port-channel(\d+): Port-channel\1
+        Tunnel(\d+): Tunnel\1
+        Vlan(\d+): Vlan\1
+        vasileft(\d+): vasileft\1
+        vasiright(\d+): vasiright\1
+    D2:
+      cml_intf_xlate:
+        GigabitEthernet0/1: GigabitEthernet0/0
+        GigabitEthernet0/2: GigabitEthernet0/1
+        GigabitEthernet0/3: GigabitEthernet0/2
+        GigabitEthernet1/0: GigabitEthernet0/3
+        GigabitEthernet1/1: GigabitEthernet1/0
+        GigabitEthernet1/2: GigabitEthernet1/1
+        GigabitEthernet1/3: GigabitEthernet1/2
+        Loopback(\d+): Loopback\1
+        Port-channel(\d+): Port-channel\1
+        Tunnel(\d+): Tunnel\1
+        Vlan(\d+): Vlan\1
+        vasileft(\d+): vasileft\1
+        vasiright(\d+): vasiright\1
+    D1:
+      cml_intf_xlate:
+        GigabitEthernet0/1: GigabitEthernet0/0
+        GigabitEthernet0/2: GigabitEthernet0/1
+        GigabitEthernet0/3: GigabitEthernet0/2
+        GigabitEthernet1/0: GigabitEthernet0/3
+        GigabitEthernet1/1: GigabitEthernet1/0
+        GigabitEthernet1/2: GigabitEthernet1/1
+        GigabitEthernet1/3: GigabitEthernet1/2
+        Loopback(\d+): Loopback\1
+        Port-channel(\d+): Port-channel\1
+        Tunnel(\d+): Tunnel\1
+        Vlan(\d+): Vlan\1
+        vasileft(\d+): vasileft\1
+        vasiright(\d+): vasiright\1
+    A2:
+      cml_intf_xlate:
+        GigabitEthernet0/1: GigabitEthernet0/0
+        GigabitEthernet0/2: GigabitEthernet0/1
+        Loopback(\d+): Loopback\1
+        Port-channel(\d+): Port-channel\1
+        Tunnel(\d+): Tunnel\1
+        Vlan(\d+): Vlan\1
+        vasileft(\d+): vasileft\1
+        vasiright(\d+): vasiright\1
+    A3:
+      cml_intf_xlate:
+        GigabitEthernet0/1: GigabitEthernet0/0
+        GigabitEthernet0/2: GigabitEthernet0/1
+        Loopback(\d+): Loopback\1
+        Port-channel(\d+): Port-channel\1
+        Tunnel(\d+): Tunnel\1
+        Vlan(\d+): Vlan\1
+        vasileft(\d+): vasileft\1
+        vasiright(\d+): vasiright\1
+    C1:
+      cml_intf_xlate:
+        GigabitEthernet0/1: GigabitEthernet0/0
+        GigabitEthernet0/2: GigabitEthernet0/1
+        GigabitEthernet0/3: GigabitEthernet0/2
+        GigabitEthernet1/3: GigabitEthernet0/3
+        GigabitEthernet2/1: GigabitEthernet1/0
+        GigabitEthernet2/2: GigabitEthernet1/1
+        Loopback(\d+): Loopback\1
+        Port-channel(\d+): Port-channel\1
+        Tunnel(\d+): Tunnel\1
+        Vlan(\d+): Vlan\1
+        vasileft(\d+): vasileft\1
+        vasiright(\d+): vasiright\1
+    C2:
+      cml_intf_xlate:
+        GigabitEthernet0/1: GigabitEthernet0/0
+        GigabitEthernet0/2: GigabitEthernet0/1
+        GigabitEthernet0/3: GigabitEthernet0/2
+        GigabitEthernet1/3: GigabitEthernet0/3
+        GigabitEthernet2/1: GigabitEthernet1/0
+        GigabitEthernet2/2: GigabitEthernet1/1
+        Loopback(\d+): Loopback\1
+        Port-channel(\d+): Port-channel\1
+        Tunnel(\d+): Tunnel\1
+        Vlan(\d+): Vlan\1
+        vasileft(\d+): vasileft\1
+        vasiright(\d+): vasiright\1
+    R1:
+      cml_intf_xlate:
+        GigabitEthernet1: GigabitEthernet0/0
+        GigabitEthernet2: GigabitEthernet0/1
+        Loopback(\d+): Loopback\1
+        Port-channel(\d+): Port-channel\1
+        Tunnel(\d+): Tunnel\1
+        Vlan(\d+): Vlan\1
+        vasileft(\d+): vasileft\1
+        vasiright(\d+): vasiright\1
+    R2:
+      cml_intf_xlate:
+        GigabitEthernet1: GigabitEthernet0/0
+        GigabitEthernet2: GigabitEthernet0/1
+        Loopback(\d+): Loopback\1
+        Port-channel(\d+): Port-channel\1
+        Tunnel(\d+): Tunnel\1
+        Vlan(\d+): Vlan\1
+        vasileft(\d+): vasileft\1
+        vasiright(\d+): vasiright\1

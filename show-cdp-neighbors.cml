@@ -1,0 +1,15 @@
+---
+- hosts: network
+  connection: network_cli
+  gather_facts: no
+
+  tasks:
+  - name: Learn CDP with PYats
+    ansible.utils.cli_parse:
+      command: show cdp neighbors
+      parser:
+        name: ansible.netcommon.pyats
+      set_fact: cdp_output
+
+  - debug:
+      var: cdp_output 

@@ -28,21 +28,21 @@ all:
               tags:
                 - switch   
             D1:
-              ansible_host: 10.0.0.2
+              ansible_host: 10.0.0.80
               tags:
-                - switch                           
+                - l3switch                           
             D2:
-              ansible_host: 10.0.0.3
+              ansible_host: 10.0.0.81
               tags:
-                - switch
+                - l3switch
             C1:
               ansible_host: 10.0.0.78
               tags:
-                - switch
+                - l3switch
             C2:
               ansible_host: 10.0.0.79
               tags:
-                - switch
+                - l3switch
             L1:
               ansible_host: 20.0.0.3
               tags:
@@ -78,18 +78,23 @@ all:
             
     org:
       children:
-        site1:
+        campus_rtp:
           # vars:
           #   site_name: site1
           hosts:
             A1:
             A2:
+            A3:
             D1:
             D2:
             C1:
             C2:
             R1:
             R2:
+        dc_rtp:
+          # vars:
+          #   site_name: site1
+          hosts:
             DCR1:
             S1:
             S2:
