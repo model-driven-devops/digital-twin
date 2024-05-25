@@ -3031,13 +3031,13 @@ nodes:
         - cloud-init-per always ip-route-add sudo ip route add 10.0.0.0/8 via 10.2.0.1
         - cloud-init-per always ip-route-add sudo ip route add 20.0.0.0/8 via 10.2.0.1
     cpu_limit: 100
-    cpus: 1
+    cpus: 2
     data_volume: 0
     hide_links: false
     id: n16
     label: ubuntu-0
     node_definition: ubuntu
-    ram: 2048
+    ram: 4096
     tags: []
     x: 1060
     y: 765
