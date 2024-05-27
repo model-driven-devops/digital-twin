@@ -1,0 +1,108 @@
+---
+- name: Create CML Digital Twin via CDP
+  hosts: dc_switches
+  connection: local
+  gather_facts: no
+  vars:
+    method: cli_parse
+    ext_conn: false
+    layout: kamada_kawai
+    scale: 500
+    # Default device type mapping for CML
+    default_cml_device_template:
+      switch:
+        node_definition: iosvl2
+        tags:
+          - switch
+        type: switch
+      router:
+        node_definition: iosv
+        tags:
+          - router
+        type: router
+      l3switch:
+        node_definition: iosvl2
+        tags:
+          - l3switch
+        type: l3switch
+      ext_conn:
+        node_definition: external_connector
+        tags: []
+      dc_switch:
+        node_definition: N9K-C9300v
+        tags:
+          - dc_switch
+        type: dc_switch
+    # Default interface mapping for CML
+    default_cml_default_mappings:
+      Loopback(\d+): Loopback\1
+      Port-channel(\d+): Port-channel\1
+      Tunnel(\d+): Tunnel\1
+      Vlan(\d+): Vlan\1
+      vasileft(\d+): vasileft\1
+      vasiright(\d+): vasiright\1
+
+  tasks:
+    - when: method == "cli_parse"
+      block:
+        - name: Get CDP data via cli_parse and PyATS
+          ansible.utils.cli_parse:
+            command: "{{ parser_command }}"
+            parser:
+                name: ansible.netcommon.pyats
+                command: "{{ parser_command | default(omit) }}"
+                os: "{{ os }}"
+          connection: network_cli
+          vars:
+            parser_command: "show cdp neighbor"
+          register: parse_results
+        - name: Build CDP data table
+          ansible.builtin.set_fact:
+            cdp_data: "{{ {'hostname': inventory_hostname, 'mgmt_interface': mgmt_interface | default(None), 'tags': tags if tags is defined else {}, 'cdp': parse_results.parsed.cdp} }}"
+
+    - name: Generate topology and mapping file
+      run_once: True
+      block:
+        - name: Create device list with CDP data
+          ansible.builtin.set_fact:
+            devices: "{{ groups['dc_switches'] | map('extract', hostvars, 'cdp_data') | list }}" # The selected group MUST match the group the playbook is executed on. (cannot limit)
+
+        - name: Create device mapping table
+          ansible.builtin.set_fact:
+            cml_device_template: "{{ default_cml_device_template }}"
+          when: cml_device_template is not defined
+
+        - name: Create interface mapping table
+          ansible.builtin.set_fact:
+            cml_default_mappings: "{{ default_cml_default_mappings }}"
+          when: cml_default_mappings is not defined
+
+        - name: Get CML node definitions
+          ansible.builtin.set_fact:
+            cml_node_definitions: "{{ lookup('cisco.cml.cml_node_definition', None, cml_host=cml_host, cml_username=cml_username, cml_password=cml_password, allow_unsafe=True) }}"
+        - name: Generate topology
+          ciscops.mdd.cml_lab:
+            devices: "{{ devices }}"
+            device_template: "{{ cml_device_template }}"
+            default_mappings: "{{ cml_default_mappings }}"
+            node_definitions: "{{ cml_node_definitions }}"
+            ext_conn: "{{ ext_conn | bool}}"
+          register: results
+
+        - name: "Layout graph using the layout {{ layout }}"
+          ansible.builtin.set_fact:
+            topology: "{{ results.topology | ciscops.mdd.graph(layout=layout,scale=scale) }}"
+          when: not layout == 'none'
+
+        - name: Create topology file
+          ansible.builtin.copy:
+            content: "{{ topology | ansible.builtin.to_nice_yaml(indent=2, sort_keys=False) }}"
+            dest: "{{ lookup('env', 'PWD') }}/files/cml_lab.yaml"
+            mode: "0644"
+          no_log: yes
+
+        - name: Create mapping file
+          ansible.builtin.copy:
+            content: "{{ {'all': {'hosts': results.mappings}} | ansible.builtin.to_nice_yaml(indent=2, sort_keys=False) }}"
+            dest: "{{ inventory_dir }}/cml_intf_map.yml"
+            mode: "0644"

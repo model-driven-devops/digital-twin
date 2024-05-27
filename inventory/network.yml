@@ -53,7 +53,7 @@ all:
               ansible_host: 20.0.0.3
               os: nxos
               tags:
-                - switch
+                - dc_switch
             L2:
               ansible_host: 20.0.0.4
               os: nxos
