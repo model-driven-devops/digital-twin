@@ -9,7 +9,8 @@
       command: show cdp neighbors
       parser:
         name: ansible.netcommon.pyats
+        os: "{{os}}"
       set_fact: cdp_output
 
   - debug:
-      var: cdp_output 
+      var: cdp_output

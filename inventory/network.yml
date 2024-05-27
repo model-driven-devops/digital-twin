@@ -13,6 +13,7 @@ all:
       children:
         switches:
           vars:
+            os: iosxe
             device_ned: cisco-nx-cli-5.23
           hosts:
             A1:
@@ -43,24 +44,34 @@ all:
               ansible_host: 10.0.0.79
               tags:
                 - l3switch
+        dc_switches:
+          vars:
+            os: nxos
+            device_ned: cisco-nx-cli-5.23
+          hosts:
             L1:
               ansible_host: 20.0.0.3
+              os: nxos
               tags:
                 - switch
             L2:
               ansible_host: 20.0.0.4
+              os: nxos
               tags:
-                - switch
+                - dc_switch
             S1:
               ansible_host: 20.0.0.1
+              os: nxos
               tags:
-                - switch
+                - dc_switch
             S2:
               ansible_host: 20.0.0.2
+              os: nxos
               tags:
-                - switch                
+                - dc_switch                
         routers:
           vars:
+            os: iosxe
             device_ned: cisco-nx-cli-5.23
           hosts:
             R1:
